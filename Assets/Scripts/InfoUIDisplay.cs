@@ -9,14 +9,34 @@ public class InfoUIDisplay : MonoBehaviour
     public GameObject uiContainer; // ScrollViewContainerをアサインする
     public TextMeshProUGUI headerText; // HeaderのTextMeshProUGUIコンポーネントをアサインする
     public GameObject databall;
+    public Material selectedMaterial;
+    private Material originalMaterial;
     private UnityEngine.XR.Interaction.Toolkit.Interactables.XRSimpleInteractable simpleInteractable;
     private bool isUIVisible = false;
+    private Renderer ballRenderer;
 
     void Start()
     {
         simpleInteractable = GetComponent<UnityEngine.XR.Interaction.Toolkit.Interactables.XRSimpleInteractable>();
         simpleInteractable.selectEntered.AddListener(ToggleUI);
         uiContainer.SetActive(false); // 初期状態では非表示
+
+        if (databall != null)
+        {
+            ballRenderer = databall.GetComponent<Renderer>();
+            if (ballRenderer != null)
+            {
+                originalMaterial = ballRenderer.material;
+            }
+            else
+            {
+                Debug.LogError("Renderer component not found on the target sphere.");
+            }
+        }
+        else
+        {
+            Debug.LogError("Target Sphere is not assigned in the inspector.");
+        }
     }
 
     void ToggleUI(SelectEnterEventArgs args)
@@ -28,6 +48,7 @@ public class InfoUIDisplay : MonoBehaviour
         {
             // UIが表示されたときにHeaderのテキストを更新
             UpdateHeaderText();
+            ChangeSphereAppearance(true);
 
             // ScrollViewTogglerの状態をリセット
             ScrollViewToggler toggler = uiContainer.GetComponentInChildren<ScrollViewToggler>();
@@ -35,6 +56,10 @@ public class InfoUIDisplay : MonoBehaviour
             {
                 toggler.InitialState(); // 初期状態（スクロールビュー非表示）に設定
             }
+        }
+        else
+        {
+            ChangeSphereAppearance(false);
         }
     }
 
@@ -55,6 +80,14 @@ public class InfoUIDisplay : MonoBehaviour
         else
         {
             Debug.LogError("Target Databall or Header Text is not assigned in the inspector.");
+        }
+    }
+
+    void ChangeSphereAppearance(bool selected)
+    {
+        if (ballRenderer != null && selectedMaterial != null)
+        {
+            ballRenderer.material = selected ? selectedMaterial : originalMaterial;
         }
     }
 

@@ -12,7 +12,7 @@ public class PointRenderer : MonoBehaviour
     //********Public Variables********
     // Bools for editor options
     public bool renderParticles = true;
-    public bool renderPrefabsWithColor = true;
+    //public bool renderPrefabsWithColor = true;
     public bool only1plot = false; // 散布図行列上で一つの散布図だけ描画する
 
     // Indices for columns to be assigned
@@ -159,11 +159,8 @@ public class PointRenderer : MonoBehaviour
             dataPoint.transform.localScale = new Vector3(pointScale, pointScale, pointScale);
 
             // Converts index to string to name the point the index number
-            string dataPointName = i.ToString();
-
-            // Assigns name to the prefab
-            dataPoint.transform.name = dataPointName;
-
+            dataPoint.transform.name = i.ToString();
+            /*
             // データ点の色を指定
             if (renderPrefabsWithColor == true)
             {
@@ -176,6 +173,7 @@ public class PointRenderer : MonoBehaviour
                 dataPoint.GetComponent<Renderer>().material.SetColor("_EmissionColor", new Color(x, y, z, 1.0f));
 
             }
+            */
 
         }
 
@@ -188,7 +186,7 @@ public class PointRenderer : MonoBehaviour
 
         particlePoints = new ParticleSystem.Particle[rowCount];
 
-        for (int i = 0; i < CSVData.pointList.Count; i++)
+        for (int i = 0; i < rowCount; i++)
         {
             // Convert object from list into float
             float x = (Convert.ToSingle(CSVData.pointList[i][xColumnName]) - xMin) / (xMax - xMin);
@@ -224,4 +222,127 @@ public class PointRenderer : MonoBehaviour
         ZLabels.transform.Find("Z_Max_Lab").gameObject.GetComponent<TextMesh>().text = zMax.ToString("0.0");
 
     }
+
+    public void UpdateDataPoints(int newColumn1, int newColumn2, int newColumn3)
+    {
+        column1 = newColumn1;
+        column2 = newColumn2;
+        column3 = newColumn3;
+
+        // 列名を更新
+        List<string> columnList = new List<string>(CSVData.pointList[1].Keys);
+        xColumnName = columnList[column1];
+        yColumnName = columnList[column2];
+        zColumnName = columnList[column3];
+
+        // 最小値と最大値を更新
+        xMax = Convert.ToSingle(CSVData.min_maxList[xColumnName][1]);
+        yMax = Convert.ToSingle(CSVData.min_maxList[yColumnName][1]);
+        zMax = Convert.ToSingle(CSVData.min_maxList[zColumnName][1]);
+        xMin = Convert.ToSingle(CSVData.min_maxList[xColumnName][0]);
+        yMin = Convert.ToSingle(CSVData.min_maxList[yColumnName][0]);
+        zMin = Convert.ToSingle(CSVData.min_maxList[zColumnName][0]);
+
+        // データ点の位置を更新
+        //UpdatePointPositions();
+        if (renderPoints)
+        {
+            StartCoroutine(MoveDataPoints());
+        }
+
+        if (renderParticles)
+        {
+            UpdateParticles();
+        }
+
+        AssignLabels();
+    }
+    /*
+    private void UpdatePointPositions()
+    {
+        for (int i = 0; i < rowCount; i++)
+        {
+            float x = (Convert.ToSingle(CSVData.pointList[i][xColumnName]) - xMin) / (xMax - xMin);
+            float y = (Convert.ToSingle(CSVData.pointList[i][yColumnName]) - yMin) / (yMax - yMin);
+            float z = (Convert.ToSingle(CSVData.pointList[i][zColumnName]) - zMin) / (zMax - zMin);
+
+            Vector3 position = new Vector3(x, y, z) * plotScale;
+
+            if (renderPoints)
+            {
+                PointHolder.transform.GetChild(i).localPosition = position;
+            }
+
+            if (renderParticles)
+            {
+                particlePoints[i].position = position;
+                particlePoints[i].startColor = new Color(x, y, z, 1.0f);
+            }
+        }
+
+        if (renderParticles)
+        {
+            GetComponent<ParticleSystem>().SetParticles(particlePoints, particlePoints.Length);
+        }
+    }
+    */
+
+    private void UpdateParticles()
+    {
+        for (int i = 0; i < rowCount; i++)
+        {
+            float x = (Convert.ToSingle(CSVData.pointList[i][xColumnName]) - xMin) / (xMax - xMin);
+            float y = (Convert.ToSingle(CSVData.pointList[i][yColumnName]) - yMin) / (yMax - yMin);
+            float z = (Convert.ToSingle(CSVData.pointList[i][zColumnName]) - zMin) / (zMax - zMin);
+
+            particlePoints[i].position = new Vector3(x, y, z) * plotScale;
+            particlePoints[i].startColor = new Color(x, y, z, 1.0f);
+        }
+
+        GetComponent<ParticleSystem>().SetParticles(particlePoints, particlePoints.Length);
+    }
+
+    private IEnumerator MoveDataPoints()
+    {
+        float duration = 1.0f; // アニメーション時間（秒）
+        float elapsedTime = 0f;
+
+        Vector3[] startPositions = new Vector3[rowCount];
+        Vector3[] endPositions = new Vector3[rowCount];
+
+        for (int i = 0; i < rowCount; i++)
+        {
+            startPositions[i] = PointHolder.transform.GetChild(i).localPosition;
+            
+            float x = (Convert.ToSingle(CSVData.pointList[i][xColumnName]) - xMin) / (xMax - xMin);
+            float y = (Convert.ToSingle(CSVData.pointList[i][yColumnName]) - yMin) / (yMax - yMin);
+            float z = (Convert.ToSingle(CSVData.pointList[i][zColumnName]) - zMin) / (zMax - zMin);
+            endPositions[i] = new Vector3(x, y, z) * plotScale;
+        }
+
+        while (elapsedTime < duration)
+        {
+            elapsedTime += Time.deltaTime;
+            float t = Mathf.Clamp01(elapsedTime / duration);
+
+            for (int i = 0; i < rowCount; i++)
+            {
+                Vector3 newPosition = Vector3.Lerp(startPositions[i], endPositions[i], t);
+                PointHolder.transform.GetChild(i).localPosition = newPosition;
+                /*
+                if (renderPrefabsWithColor)
+                {
+                    Color newColor = Color.Lerp(startPositions[i] / plotScale, endPositions[i] / plotScale, t);
+                    PointHolder.transform.GetChild(i).GetComponent<Renderer>().material.color = newColor;
+                    PointHolder.transform.GetChild(i).GetComponent<Renderer>().material.SetColor("_EmissionColor", newColor);
+                }
+                */
+            }
+
+            yield return null;
+        }
+
+        Debug.Log("Data points movement completed");
+    }
+
 }
