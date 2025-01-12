@@ -15,7 +15,7 @@ C:/Users/itolab/Desktop/rollingthedice
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-63420
+53008
 Successfully changed project path to: C:/Users/itolab/Desktop/rollingthedice
 C:/Users/itolab/Desktop/rollingthedice
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,15 +49,15 @@ C:/Users/itolab/Desktop/rollingthedice
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [1152]  Target information:
+Player connection [5860]  Target information:
 
-Player connection [1152]  * "[IP] 172.30.47.105 [Port] 0 [Flags] 2 [Guid] 851382290 [EditorId] 851382290 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-NLC2L56) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [5860]  * "[IP] 172.30.47.105 [Port] 0 [Flags] 2 [Guid] 2209565185 [EditorId] 2209565185 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-NLC2L56) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [1152] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [1152] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [5860] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [5860] Host joined alternative multi-casting on [225.0.0.222:34997]...
 [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-Refreshing native plugins compatible for Editor in 89.92 ms, found 23 plugins.
-Preloading 1 native plugins for Editor in 1.02 ms.
+Refreshing native plugins compatible for Editor in 75.97 ms, found 23 plugins.
+Preloading 1 native plugins for Editor in 0.60 ms.
 Initialize engine version: 2022.3.55f1 (9f374180d209)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.55f1/Editor/Data/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path C:/Users/itolab/Desktop/rollingthedice/Assets
@@ -72,44 +72,44 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.55f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.55f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.55f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56816
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56840
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.55f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.016139 seconds.
-- Loaded All Assemblies, in  0.677 seconds
+Registered in 0.012570 seconds.
+- Loaded All Assemblies, in  0.480 seconds
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.362 seconds
-Domain Reload Profiling: 1034ms
-	BeginReloadAssembly (149ms)
+- Finished resetting the current domain, in  0.340 seconds
+Domain Reload Profiling: 818ms
+	BeginReloadAssembly (155ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (49ms)
-	RebuildNativeTypeToScriptingClass (15ms)
-	initialDomainReloadingComplete (92ms)
-	LoadAllAssembliesAndSetupDomain (367ms)
-		LoadAssemblies (146ms)
+	RebuildCommonClasses (43ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (78ms)
+	LoadAllAssembliesAndSetupDomain (189ms)
+		LoadAssemblies (150ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (364ms)
-			TypeCache.Refresh (362ms)
-				TypeCache.ScanAssembly (341ms)
+		AnalyzeDomain (187ms)
+			TypeCache.Refresh (185ms)
+				TypeCache.ScanAssembly (168ms)
 			ScanForSourceGeneratedMonoScriptInfo (1ms)
 			ResolveRequiredComponents (1ms)
-	FinalizeReload (362ms)
+	FinalizeReload (341ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (298ms)
+		SetupLoadedEditorAssemblies (281ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (14ms)
-			SetLoadedEditorAssemblies (11ms)
+			InitializePlatformSupportModulesInManaged (12ms)
+			SetLoadedEditorAssemblies (10ms)
 			RefreshPlugins (0ms)
 			BeforeProcessingInitializeOnLoad (3ms)
-			ProcessInitializeOnLoadAttributes (207ms)
-			ProcessInitializeOnLoadMethodAttributes (64ms)
+			ProcessInitializeOnLoadAttributes (195ms)
+			ProcessInitializeOnLoadMethodAttributes (61ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -118,7 +118,7 @@ Domain Reload Profiling: 1034ms
 Worker process is ready to serve import requests
 Caller must complete domain reload
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  1.074 seconds
+- Loaded All Assemblies, in  1.169 seconds
 Native extension for WindowsStandalone target not found
 Package Manager log level set to [2]
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
@@ -146,153 +146,50 @@ Mono: successfully reloaded assembly
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  1.347 seconds
-Domain Reload Profiling: 2416ms
-	BeginReloadAssembly (186ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (6ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (26ms)
-	RebuildCommonClasses (39ms)
-	RebuildNativeTypeToScriptingClass (13ms)
-	initialDomainReloadingComplete (57ms)
-	LoadAllAssembliesAndSetupDomain (773ms)
-		LoadAssemblies (503ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (378ms)
-			TypeCache.Refresh (315ms)
-				TypeCache.ScanAssembly (286ms)
-			ScanForSourceGeneratedMonoScriptInfo (43ms)
-			ResolveRequiredComponents (17ms)
-	FinalizeReload (1348ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1138ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (8ms)
-			SetLoadedEditorAssemblies (7ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (126ms)
-			ProcessInitializeOnLoadAttributes (834ms)
-			ProcessInitializeOnLoadMethodAttributes (152ms)
-			AfterProcessingInitializeOnLoad (11ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (8ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 69.23 ms, found 23 plugins.
-Preloading 1 native plugins for Editor in 0.09 ms.
-Unloading 6509 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 130 unused Assets / (2.1 MB). Loaded Objects now: 6940.
-Memory consumption went from 248.5 MB to 246.4 MB.
-Total: 8.411400 ms (FindLiveObjects: 0.716000 ms CreateObjectMapping: 0.731200 ms MarkObjects: 5.586700 ms  DeleteObjects: 1.375800 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 4593836.359394 seconds.
-  path: Assets/Prefabs/Panel.prefab
-  artifactKey: Guid(2033747cc7a5ccf4b945019b8429d16e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Panel.prefab using Guid(2033747cc7a5ccf4b945019b8429d16e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '32ecd46533fafaf3c9caeab5199802ea') in 0.103645 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 62
-========================================================================
-Received Prepare
-Caller must complete domain reload
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.805 seconds
-Native extension for WindowsStandalone target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-System.NullReferenceException: Object reference not set to an instance of an object
-  at UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets.RenderPipelineValidation..cctor () [0x0000d] in C:\Users\itolab\Desktop\rollingthedice\Assets\Samples\XR Interaction Toolkit\3.0.3\Starter Assets\Scripts\MaterialPipelineHandler.cs:16 
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
-  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0003d] in .\Library\PackageCache\com.unity.xr.oculus@4.4.0\Runtime\OculusLoader.cs:307 
-  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0008c] in .\Library\PackageCache\com.unity.xr.oculus@4.4.0\Runtime\OculusLoader.cs:292 
-  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
-  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <de920293e401402ab375ad8a2e1b19da>:0 
-   --- End of inner exception stack trace ---
-  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00083] in <de920293e401402ab375ad8a2e1b19da>:0 
-  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <de920293e401402ab375ad8a2e1b19da>:0 
-  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x000a5] in <c4b0cc57ec424a5a9b1c3b56141bb74a>:0 
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
-
-Mono: successfully reloaded assembly
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  1.949 seconds
-Domain Reload Profiling: 2747ms
-	BeginReloadAssembly (220ms)
+- Finished resetting the current domain, in  1.500 seconds
+Domain Reload Profiling: 2663ms
+	BeginReloadAssembly (201ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (7ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (58ms)
-	RebuildCommonClasses (46ms)
-	RebuildNativeTypeToScriptingClass (16ms)
-	initialDomainReloadingComplete (44ms)
-	LoadAllAssembliesAndSetupDomain (471ms)
-		LoadAssemblies (494ms)
+		CreateAndSetChildDomain (27ms)
+	RebuildCommonClasses (44ms)
+	RebuildNativeTypeToScriptingClass (14ms)
+	initialDomainReloadingComplete (55ms)
+	LoadAllAssembliesAndSetupDomain (848ms)
+		LoadAssemblies (542ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (88ms)
-			TypeCache.Refresh (15ms)
-				TypeCache.ScanAssembly (1ms)
-			ScanForSourceGeneratedMonoScriptInfo (51ms)
-			ResolveRequiredComponents (20ms)
-	FinalizeReload (1950ms)
+		AnalyzeDomain (428ms)
+			TypeCache.Refresh (357ms)
+				TypeCache.ScanAssembly (325ms)
+			ScanForSourceGeneratedMonoScriptInfo (42ms)
+			ResolveRequiredComponents (27ms)
+	FinalizeReload (1501ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1010ms)
+		SetupLoadedEditorAssemblies (1243ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (9ms)
-			SetLoadedEditorAssemblies (4ms)
+			SetLoadedEditorAssemblies (6ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (129ms)
-			ProcessInitializeOnLoadAttributes (720ms)
-			ProcessInitializeOnLoadMethodAttributes (134ms)
-			AfterProcessingInitializeOnLoad (13ms)
+			BeforeProcessingInitializeOnLoad (139ms)
+			ProcessInitializeOnLoadAttributes (895ms)
+			ProcessInitializeOnLoadMethodAttributes (179ms)
+			AfterProcessingInitializeOnLoad (15ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (12ms)
-Refreshing native plugins compatible for Editor in 86.14 ms, found 23 plugins.
-Preloading 1 native plugins for Editor in 0.10 ms.
-Unloading 6413 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 123 unused Assets / (2.1 MB). Loaded Objects now: 6952.
-Memory consumption went from 227.4 MB to 225.3 MB.
-Total: 8.859600 ms (FindLiveObjects: 0.747700 ms CreateObjectMapping: 0.855200 ms MarkObjects: 5.716600 ms  DeleteObjects: 1.539000 ms)
+		AwakeInstancesAfterBackupRestoration (7ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 84.33 ms, found 23 plugins.
+Preloading 1 native plugins for Editor in 0.14 ms.
+Unloading 6517 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 130 unused Assets / (2.1 MB). Loaded Objects now: 6949.
+Memory consumption went from 250.0 MB to 247.8 MB.
+Total: 6.486100 ms (FindLiveObjects: 0.543800 ms CreateObjectMapping: 0.710100 ms MarkObjects: 3.917000 ms  DeleteObjects: 1.313800 ms)
 
-Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
-  custom:scripting/monoscript/fileName/LabelOrienter_Smooth.cs: b50405f3a032c915c170284bfefdd598 -> 
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:scripting/monoscript/fileName/ClickObject.cs: baf33ca2ba035001dfefd9118c08d31e -> 
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
@@ -300,92 +197,909 @@ AssetImportParameters requested are different than current active one (requested
   custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:scripting/precompiled-assembly-types:Assembly-CSharp: ebc0fe8e75f801fec9e33031e6eb4b6d -> 8f641899de7d63885143bfe987b94054
-  custom:scripting/monoscript/fileName/CSVData.cs: 477b07e867a712989258eb0773e0c7b2 -> 
   custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:scripting/monoscript/fileName/DataPointInfoDisplay.cs: 80c1fe2958dfaad0a07bc0394c2f92b4 -> 
   custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:scripting/monoscript/fileName/PointRenderer.cs: 7a6872d6e87dcca86e82f6ff2d469cb6 -> 
-  custom:scripting/monoscript/fileName/CSVReader.cs: cdcdcb440722df93af9171927749805e -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 20.310680 seconds.
-  path: Assets/Prefabs/Scatterplot.prefab
-  artifactKey: Guid(b2a68e811e6c04545a40bf3c9dade1bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Scatterplot.prefab using Guid(b2a68e811e6c04545a40bf3c9dade1bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+  Time since last request: 167645.423243 seconds.
+  path: Assets/Prefabs/ScatterplotMatrix.prefab
+  artifactKey: Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ScatterplotMatrix.prefab using Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: 'e6f7b9a59a1912d836c91572eb02960a') in 1.646443 seconds
+ -> (artifact id: '2d92a3e057c04036e79dd68b95500983') in 0.618297 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 269
+Number of asset objects unloaded after import = 2209
 ========================================================================
 Received Import Request.
-  Time since last request: 3.565252 seconds.
-  path: Assets/Materials/FixedFont.mat
-  artifactKey: Guid(44157ba6b0068dd4db76d1ed394d7bc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/FixedFont.mat using Guid(44157ba6b0068dd4db76d1ed394d7bc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+  Time since last request: 6.052672 seconds.
+  path: Assets/Prefabs/ScatterplotMatrix.prefab
+  artifactKey: Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ScatterplotMatrix.prefab using Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '9f97c46ef1f173aa2cec286a27a8322e') in 0.074122 seconds
+ -> (artifact id: '07ba1a6528428786d963479d204cba82') in 0.275087 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 4
+Number of asset objects unloaded after import = 2191
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/Materials/ParticlePoint.mat
-  artifactKey: Guid(47d436c475323e04f8bcf1c729f5c420) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/ParticlePoint.mat using Guid(47d436c475323e04f8bcf1c729f5c420) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+  Time since last request: 7.244802 seconds.
+  path: Assets/Prefabs/ScatterplotMatrix.prefab
+  artifactKey: Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ScatterplotMatrix.prefab using Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '3ef6f1e50c39ee00fed01114c2c06c27') in 0.018521 seconds
+ -> (artifact id: '969cef043cba350054a819ffd19d949d') in 0.217180 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
+Number of asset objects unloaded after import = 2193
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/Materials/ROBOTO-BLACK.TTF
-  artifactKey: Guid(be009d6e35fc4f5428f77087f7efa134) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/ROBOTO-BLACK.TTF using Guid(be009d6e35fc4f5428f77087f7efa134) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+  Time since last request: 3.105498 seconds.
+  path: Assets/Prefabs/ScatterplotMatrix.prefab
+  artifactKey: Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ScatterplotMatrix.prefab using Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '7dc35dac95fd621265f776c6f27ee3f1') in 0.043075 seconds
+ -> (artifact id: '18d7da273275cbfc0361f379e6d02943') in 0.211532 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 5
+Number of asset objects unloaded after import = 2193
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/Materials/ROBOTO-BLACK_copy.png
-  artifactKey: Guid(702db0e1e936d9c498c12ab7661ea8e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/ROBOTO-BLACK_copy.png using Guid(702db0e1e936d9c498c12ab7661ea8e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+  Time since last request: 3.041921 seconds.
+  path: Assets/Prefabs/ScatterplotMatrix.prefab
+  artifactKey: Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ScatterplotMatrix.prefab using Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '4ca1e735b69225ae6ba893690251a0c9') in 0.029212 seconds
+ -> (artifact id: '1ca82d932430b793e8ac9a414be36dee') in 0.211338 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
+Number of asset objects unloaded after import = 2193
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000039 seconds.
-  path: Assets/Materials/Point_Mat.mat
-  artifactKey: Guid(9ce28393a5abc014e88b476ce3aeced7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Point_Mat.mat using Guid(9ce28393a5abc014e88b476ce3aeced7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+  Time since last request: 8.578096 seconds.
+  path: Assets/Prefabs/ScatterplotMatrix.prefab
+  artifactKey: Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ScatterplotMatrix.prefab using Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '50afb0f22cf652d6a1729910685a4ea1') in 0.022249 seconds
+ -> (artifact id: 'd6528377acaa0af2558488cdafd33185') in 0.211413 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
+Number of asset objects unloaded after import = 2193
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/Materials/Transparent Material.mat
-  artifactKey: Guid(91f66d4f37f130041ad1c3f53b521012) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Transparent Material.mat using Guid(91f66d4f37f130041ad1c3f53b521012) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+  Time since last request: 7.044121 seconds.
+  path: Assets/Prefabs/ScatterplotMatrix.prefab
+  artifactKey: Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ScatterplotMatrix.prefab using Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: 'f0a7a76b14e2f6378937bc741a578698') in 0.017685 seconds
+ -> (artifact id: '209c6bca2bb4302fb654551b3b2b4070') in 0.213392 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
+Number of asset objects unloaded after import = 2195
+========================================================================
+Received Import Request.
+  Time since last request: 2.500145 seconds.
+  path: Assets/Prefabs/ScatterplotMatrix.prefab
+  artifactKey: Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ScatterplotMatrix.prefab using Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'f41c61e352312675e50d44d3d2c0ed9a') in 0.221765 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2195
+========================================================================
+Received Import Request.
+  Time since last request: 5.806823 seconds.
+  path: Assets/Prefabs/ScatterplotMatrix.prefab
+  artifactKey: Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ScatterplotMatrix.prefab using Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '92f0499a47bed1e4b71249d48406077c') in 0.220602 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2195
+========================================================================
+Received Import Request.
+  Time since last request: 6.627812 seconds.
+  path: Assets/Prefabs/ScatterplotMatrix.prefab
+  artifactKey: Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ScatterplotMatrix.prefab using Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '6be9512ea6c679b9217c3f4d785d83df') in 0.189755 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2197
+========================================================================
+Received Import Request.
+  Time since last request: 1.314277 seconds.
+  path: Assets/Prefabs/ScatterplotMatrix.prefab
+  artifactKey: Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ScatterplotMatrix.prefab using Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '3586eb73cacfc5dfa840111c0a14f30d') in 0.209165 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2197
+========================================================================
+Received Import Request.
+  Time since last request: 3.750139 seconds.
+  path: Assets/Prefabs/ScatterplotMatrix.prefab
+  artifactKey: Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ScatterplotMatrix.prefab using Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'd02bd0d5fd54752673a7e399be298219') in 0.219879 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2199
+========================================================================
+Received Import Request.
+  Time since last request: 1.088289 seconds.
+  path: Assets/Prefabs/ScatterplotMatrix.prefab
+  artifactKey: Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ScatterplotMatrix.prefab using Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'b57c8cf7c5215811a753884e19d4f682') in 0.208796 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2199
+========================================================================
+Received Import Request.
+  Time since last request: 3.109156 seconds.
+  path: Assets/Prefabs/ScatterplotMatrix.prefab
+  artifactKey: Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ScatterplotMatrix.prefab using Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '073ada3a6e75e56a21f8894103af39b4') in 0.211115 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2201
+========================================================================
+Received Import Request.
+  Time since last request: 1.299107 seconds.
+  path: Assets/Prefabs/ScatterplotMatrix.prefab
+  artifactKey: Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ScatterplotMatrix.prefab using Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '1d9cb35110a7915bfac3e197adc32069') in 0.213581 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2201
+========================================================================
+Received Import Request.
+  Time since last request: 2.962270 seconds.
+  path: Assets/Prefabs/ScatterplotMatrix.prefab
+  artifactKey: Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ScatterplotMatrix.prefab using Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '0fb71a5456c94d7f2bbfb69eb27c1620') in 0.213490 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2203
+========================================================================
+Received Import Request.
+  Time since last request: 1.682521 seconds.
+  path: Assets/Prefabs/ScatterplotMatrix.prefab
+  artifactKey: Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ScatterplotMatrix.prefab using Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'b0f3cd2d0c40d05078f7ef6b2d1f1d03') in 0.204918 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2203
+========================================================================
+Received Import Request.
+  Time since last request: 3.791386 seconds.
+  path: Assets/Prefabs/ScatterplotMatrix.prefab
+  artifactKey: Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ScatterplotMatrix.prefab using Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'ab65d185dc3820ff3360933a51e000a0') in 0.209223 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2205
+========================================================================
+Received Import Request.
+  Time since last request: 2.501411 seconds.
+  path: Assets/Prefabs/ScatterplotMatrix.prefab
+  artifactKey: Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ScatterplotMatrix.prefab using Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '64a46f584e528b030a74018bcce3e38d') in 0.207957 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2205
+========================================================================
+Received Import Request.
+  Time since last request: 9.964416 seconds.
+  path: Assets/Prefabs/ScatterplotMatrix.prefab
+  artifactKey: Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ScatterplotMatrix.prefab using Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'ef741a79c19188901939481a88a13dc6') in 0.211450 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2205
+========================================================================
+Received Import Request.
+  Time since last request: 8.273595 seconds.
+  path: Assets/Prefabs/ScatterplotMatrix.prefab
+  artifactKey: Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ScatterplotMatrix.prefab using Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'c53bcc02e9c9075beb0dda4e268713be') in 0.213493 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2205
+========================================================================
+Received Import Request.
+  Time since last request: 9.385439 seconds.
+  path: Assets/Prefabs/ScatterplotMatrix.prefab
+  artifactKey: Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ScatterplotMatrix.prefab using Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '4deb02cee7b2ee83e10dc8c25a6bba8c') in 0.212874 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2205
+========================================================================
+Received Import Request.
+  Time since last request: 8.105270 seconds.
+  path: Assets/Prefabs/ScatterplotMatrix.prefab
+  artifactKey: Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ScatterplotMatrix.prefab using Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '8265ec7474d3af1f4e19b396dfdbfd51') in 0.207795 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2205
+========================================================================
+Received Import Request.
+  Time since last request: 7.637328 seconds.
+  path: Assets/Prefabs/ScatterplotMatrix.prefab
+  artifactKey: Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ScatterplotMatrix.prefab using Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'c60e89e58dc8cf5c6df65c949270abd4') in 0.218837 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2205
+========================================================================
+Received Import Request.
+  Time since last request: 7.666462 seconds.
+  path: Assets/Prefabs/ScatterplotMatrix.prefab
+  artifactKey: Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ScatterplotMatrix.prefab using Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'e54f4f954f88b313e4e3d07ba2c0c3f9') in 0.210882 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2205
+========================================================================
+Received Import Request.
+  Time since last request: 19.685512 seconds.
+  path: Assets/Prefabs/ScatterplotMatrix.prefab
+  artifactKey: Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ScatterplotMatrix.prefab using Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '818cbe81f316ce168ded14cd19944e2d') in 0.219888 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2207
+========================================================================
+Received Import Request.
+  Time since last request: 3.546364 seconds.
+  path: Assets/Prefabs/ScatterplotMatrix.prefab
+  artifactKey: Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ScatterplotMatrix.prefab using Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '881b4ad8c378eba914742eb14176b3e3') in 0.212392 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2207
+========================================================================
+Received Import Request.
+  Time since last request: 14.299912 seconds.
+  path: Assets/Prefabs/ScatterplotMatrix.prefab
+  artifactKey: Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ScatterplotMatrix.prefab using Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'bf6a83f104f369d60adbe7885048c110') in 0.198484 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2209
+========================================================================
+Received Import Request.
+  Time since last request: 0.353302 seconds.
+  path: Assets/Prefabs/ScatterplotMatrix.prefab
+  artifactKey: Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ScatterplotMatrix.prefab using Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'a62a59d2825f1f7d960a007413c22328') in 0.215707 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2211
+========================================================================
+Received Import Request.
+  Time since last request: 1.078682 seconds.
+  path: Assets/Prefabs/ScatterplotMatrix.prefab
+  artifactKey: Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ScatterplotMatrix.prefab using Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '68105000355c367ade0d168591f8047a') in 0.209193 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2213
+========================================================================
+Received Import Request.
+  Time since last request: 0.683988 seconds.
+  path: Assets/Prefabs/ScatterplotMatrix.prefab
+  artifactKey: Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ScatterplotMatrix.prefab using Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '0b5c3d0d69e904417493df358041c951') in 0.212752 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2215
+========================================================================
+Received Import Request.
+  Time since last request: 0.482024 seconds.
+  path: Assets/Prefabs/ScatterplotMatrix.prefab
+  artifactKey: Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ScatterplotMatrix.prefab using Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'f9d1604d81841c31fb7c7e63dd6dffe6') in 0.207699 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2217
+========================================================================
+Received Import Request.
+  Time since last request: 0.776611 seconds.
+  path: Assets/Prefabs/ScatterplotMatrix.prefab
+  artifactKey: Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ScatterplotMatrix.prefab using Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '4d560b933a0e50daaf2b66003ddbcf2d') in 0.216881 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2219
+========================================================================
+Received Import Request.
+  Time since last request: 2.347445 seconds.
+  path: Assets/Prefabs/ScatterplotMatrix.prefab
+  artifactKey: Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ScatterplotMatrix.prefab using Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '62f363b1baec550c95832292b3ba5aea') in 0.204605 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2221
+========================================================================
+Received Import Request.
+  Time since last request: 6.550743 seconds.
+  path: Assets/Prefabs/ScatterplotMatrix.prefab
+  artifactKey: Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ScatterplotMatrix.prefab using Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '706c96e863a8625f23395a12d2ac8280') in 0.214015 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2221
+========================================================================
+Received Import Request.
+  Time since last request: 5.852025 seconds.
+  path: Assets/Prefabs/ScatterplotMatrix.prefab
+  artifactKey: Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ScatterplotMatrix.prefab using Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '3463d31e14e80b9c7fb52ebda3c5c6a5') in 0.187763 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2221
+========================================================================
+Received Import Request.
+  Time since last request: 5.052429 seconds.
+  path: Assets/Prefabs/ScatterplotMatrix.prefab
+  artifactKey: Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ScatterplotMatrix.prefab using Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '2ce8331be01d7d86be5fd4bb55b4a054') in 0.179216 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2221
+========================================================================
+Received Import Request.
+  Time since last request: 1.194443 seconds.
+  path: Assets/Prefabs/ScatterplotMatrix.prefab
+  artifactKey: Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ScatterplotMatrix.prefab using Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'fd675f28677cb950c87a3bbeecbd3e9b') in 0.220262 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2223
+========================================================================
+Received Import Request.
+  Time since last request: 7.120919 seconds.
+  path: Assets/Prefabs/ScatterplotMatrix.prefab
+  artifactKey: Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ScatterplotMatrix.prefab using Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '0356bb0315551a2511fa45da1ac5808b') in 0.206871 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2221
+========================================================================
+Received Import Request.
+  Time since last request: 5.803470 seconds.
+  path: Assets/Prefabs/ScatterplotMatrix.prefab
+  artifactKey: Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ScatterplotMatrix.prefab using Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '90b0ebbd3ba60c0a1d491b82e1ea986b') in 0.224411 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2221
+========================================================================
+Received Import Request.
+  Time since last request: 5.357223 seconds.
+  path: Assets/Prefabs/ScatterplotMatrix.prefab
+  artifactKey: Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ScatterplotMatrix.prefab using Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '1b2462dbc5a9035f7b400717d543727e') in 0.175768 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2221
+========================================================================
+Received Import Request.
+  Time since last request: 4.032136 seconds.
+  path: Assets/Prefabs/ScatterplotMatrix.prefab
+  artifactKey: Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ScatterplotMatrix.prefab using Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '961411164463d61153a116317e51b147') in 0.222127 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2221
+========================================================================
+Received Import Request.
+  Time since last request: 9.346722 seconds.
+  path: Assets/Prefabs/ScatterplotMatrix.prefab
+  artifactKey: Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ScatterplotMatrix.prefab using Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'c46141237eb946d0e3f99ef5dbf9b3c9') in 0.221614 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2221
+========================================================================
+Received Import Request.
+  Time since last request: 8.112544 seconds.
+  path: Assets/Prefabs/ScatterplotMatrix.prefab
+  artifactKey: Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ScatterplotMatrix.prefab using Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'd94fcee81bb6ad479fdc9b546b4add89') in 0.224043 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2221
+========================================================================
+Received Import Request.
+  Time since last request: 6.376519 seconds.
+  path: Assets/Prefabs/ScatterplotMatrix.prefab
+  artifactKey: Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ScatterplotMatrix.prefab using Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '19cb221e6d75fbebb04fee0b1d0ddcec') in 0.202073 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2221
+========================================================================
+Received Import Request.
+  Time since last request: 7.425580 seconds.
+  path: Assets/Prefabs/ScatterplotMatrix.prefab
+  artifactKey: Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ScatterplotMatrix.prefab using Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'ba7d754c16f8a9ad7789c272b4929d2f') in 0.210564 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2221
+========================================================================
+Received Import Request.
+  Time since last request: 11.302582 seconds.
+  path: Assets/Prefabs/ScatterplotMatrix.prefab
+  artifactKey: Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ScatterplotMatrix.prefab using Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'de1443028fd3d581a1003aef2c0e674f') in 0.218069 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2221
+========================================================================
+Received Import Request.
+  Time since last request: 9.616291 seconds.
+  path: Assets/Prefabs/ScatterplotMatrix.prefab
+  artifactKey: Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ScatterplotMatrix.prefab using Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '3a1a6470eb9d124c05a9c96d4fc867f9') in 0.219470 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2221
+========================================================================
+Received Import Request.
+  Time since last request: 9.390016 seconds.
+  path: Assets/Prefabs/ScatterplotMatrix.prefab
+  artifactKey: Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ScatterplotMatrix.prefab using Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'a714a6b2788a0c1b6fc35a96a4a53d81') in 0.217009 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2221
+========================================================================
+Received Import Request.
+  Time since last request: 7.064399 seconds.
+  path: Assets/Prefabs/ScatterplotMatrix.prefab
+  artifactKey: Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ScatterplotMatrix.prefab using Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '7e9a00d8f37a916cfa9ac5375f920a1f') in 0.215502 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2221
+========================================================================
+Received Import Request.
+  Time since last request: 352.160970 seconds.
+  path: Assets/Prefabs/ScatterplotMatrix.prefab
+  artifactKey: Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ScatterplotMatrix.prefab using Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '56431969ff091cc6f3d1aaf203165648') in 0.225737 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2223
+========================================================================
+Received Import Request.
+  Time since last request: 4.313114 seconds.
+  path: Assets/Prefabs/ScatterplotMatrix.prefab
+  artifactKey: Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ScatterplotMatrix.prefab using Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '24acb0e4d6398426122f9301fcd64dfd') in 0.214039 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2223
+========================================================================
+Received Import Request.
+  Time since last request: 3.930633 seconds.
+  path: Assets/Prefabs/ScatterplotMatrix.prefab
+  artifactKey: Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ScatterplotMatrix.prefab using Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '6625eb7b448bad762da5677782d6fcdd') in 0.187379 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2225
+========================================================================
+Received Import Request.
+  Time since last request: 0.372609 seconds.
+  path: Assets/Prefabs/ScatterplotMatrix.prefab
+  artifactKey: Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ScatterplotMatrix.prefab using Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '00000000000000000000000000000000') in 0.183515 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/prefabs/scatterplotmatrix.prefab in SourceAssetDB has modification time of '2025-01-10T07:02:32.863239Z' while content on disk has modification time of '2025-01-10T07:02:33.4895186Z'
+  ERROR: Build asset version error: assets/prefabs/scatterplotmatrix.prefab in SourceAssetDB has modification time of '2025-01-10T07:02:32.863239Z' while content on disk has modification time of '2025-01-10T07:02:33.4895186Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 129
+========================================================================
+Received Import Request.
+  Time since last request: 0.474048 seconds.
+  path: Assets/Prefabs/ScatterplotMatrix.prefab
+  artifactKey: Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ScatterplotMatrix.prefab using Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '3195cfa03ba35350030d1bbc7dca8c1b') in 0.217745 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2237
+========================================================================
+Received Import Request.
+  Time since last request: 13.698096 seconds.
+  path: Assets/Prefabs/ScatterplotMatrix.prefab
+  artifactKey: Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ScatterplotMatrix.prefab using Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'c9d413f2c8ea3a272492c92f8e1c6726') in 0.216666 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2237
+========================================================================
+Received Import Request.
+  Time since last request: 7.114200 seconds.
+  path: Assets/Prefabs/ScatterplotMatrix.prefab
+  artifactKey: Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ScatterplotMatrix.prefab using Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '15de37394336fade7c8f8b48d6af085a') in 0.211324 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2237
+========================================================================
+Received Import Request.
+  Time since last request: 8.790183 seconds.
+  path: Assets/Prefabs/ScatterplotMatrix.prefab
+  artifactKey: Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ScatterplotMatrix.prefab using Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '9d9accc985131104ee2b4490fc1ec789') in 0.215017 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2237
+========================================================================
+Received Import Request.
+  Time since last request: 8.696995 seconds.
+  path: Assets/Prefabs/ScatterplotMatrix.prefab
+  artifactKey: Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ScatterplotMatrix.prefab using Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '3681679aa8ce0f5c7bbcdd0592fd57e1') in 0.211987 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2237
+========================================================================
+Received Import Request.
+  Time since last request: 6.849075 seconds.
+  path: Assets/Prefabs/ScatterplotMatrix.prefab
+  artifactKey: Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ScatterplotMatrix.prefab using Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '741daeccb065abbea3f9e3ff575c1a0c') in 0.212615 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2237
+========================================================================
+Received Import Request.
+  Time since last request: 7.337336 seconds.
+  path: Assets/Prefabs/ScatterplotMatrix.prefab
+  artifactKey: Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ScatterplotMatrix.prefab using Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '2331c3929bc7ada8e2a4e83bd5c6f749') in 0.216279 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2237
+========================================================================
+Received Import Request.
+  Time since last request: 6.464116 seconds.
+  path: Assets/Prefabs/ScatterplotMatrix.prefab
+  artifactKey: Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ScatterplotMatrix.prefab using Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'c5c4fde587d2e3fa63b15ca5005ecf9b') in 0.199950 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2237
+========================================================================
+Received Import Request.
+  Time since last request: 8.996714 seconds.
+  path: Assets/Prefabs/ScatterplotMatrix.prefab
+  artifactKey: Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ScatterplotMatrix.prefab using Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'fc6c5b37b7598fe6f0c3c582b90e2cd4') in 0.214971 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2237
+========================================================================
+Received Import Request.
+  Time since last request: 164.812468 seconds.
+  path: Assets/Prefabs/ScatterplotMatrix.prefab
+  artifactKey: Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ScatterplotMatrix.prefab using Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '164229fd8f24e7561c77802498a655ed') in 0.228741 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2237
+========================================================================
+Received Import Request.
+  Time since last request: 10.767430 seconds.
+  path: Assets/Prefabs/ScatterplotMatrix.prefab
+  artifactKey: Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ScatterplotMatrix.prefab using Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'ec51733372458c417db00c8dc3a15f9a') in 0.207843 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2237
+========================================================================
+Received Import Request.
+  Time since last request: 15.962640 seconds.
+  path: Assets/Prefabs/ScatterplotMatrix.prefab
+  artifactKey: Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ScatterplotMatrix.prefab using Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '15505378e93fbf8fc8f0a375ffc0b37a') in 0.214435 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2237
+========================================================================
+Received Import Request.
+  Time since last request: 1.882517 seconds.
+  path: Assets/Prefabs/ScatterplotMatrix.prefab
+  artifactKey: Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ScatterplotMatrix.prefab using Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '1be78f0d81edb65084305bb35013c1c3') in 0.218650 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2237
+========================================================================
+Received Import Request.
+  Time since last request: 6.822553 seconds.
+  path: Assets/Prefabs/ScatterplotMatrix.prefab
+  artifactKey: Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ScatterplotMatrix.prefab using Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'd4f9ff99af0cd2c7e7f4e630df4db82b') in 0.212070 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2237
+========================================================================
+Received Import Request.
+  Time since last request: 10.156073 seconds.
+  path: Assets/Prefabs/ScatterplotMatrix.prefab
+  artifactKey: Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ScatterplotMatrix.prefab using Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '2e3c658e45ea7a9e1798654b5be91a62') in 0.215662 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2237
+========================================================================
+Received Import Request.
+  Time since last request: 6.829485 seconds.
+  path: Assets/Prefabs/ScatterplotMatrix.prefab
+  artifactKey: Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ScatterplotMatrix.prefab using Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '9504f079e9dcc202b94eba66ce29618c') in 0.203490 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2237
+========================================================================
+Received Import Request.
+  Time since last request: 12.028359 seconds.
+  path: Assets/Prefabs/ScatterplotMatrix.prefab
+  artifactKey: Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ScatterplotMatrix.prefab using Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '5e1ee4196d6e01c93f4c462c76b71795') in 0.214323 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2237
+========================================================================
+Received Import Request.
+  Time since last request: 14.372692 seconds.
+  path: Assets/Prefabs/ScatterplotMatrix.prefab
+  artifactKey: Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ScatterplotMatrix.prefab using Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '50af176360beb95948c7e9e72697103f') in 0.322374 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2237
+========================================================================
+Received Import Request.
+  Time since last request: 7.408586 seconds.
+  path: Assets/Prefabs/ScatterplotMatrix.prefab
+  artifactKey: Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ScatterplotMatrix.prefab using Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'd7950159f066450038ab3220de91efd9') in 0.209034 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2237
+========================================================================
+Received Import Request.
+  Time since last request: 8.059903 seconds.
+  path: Assets/Prefabs/ScatterplotMatrix.prefab
+  artifactKey: Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ScatterplotMatrix.prefab using Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '41243f3871436e60833eb0c2834cca5a') in 0.209029 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2237
+========================================================================
+Received Import Request.
+  Time since last request: 3.407028 seconds.
+  path: Assets/Prefabs/ScatterplotMatrix.prefab
+  artifactKey: Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ScatterplotMatrix.prefab using Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'fe001c6373f07dce8d105aabb00d27f7') in 0.211169 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2237
+========================================================================
+Received Import Request.
+  Time since last request: 3.125001 seconds.
+  path: Assets/Prefabs/ScatterplotMatrix.prefab
+  artifactKey: Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ScatterplotMatrix.prefab using Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '5ffe729d6b982f71e7b028344dd7405c') in 0.202527 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2237
+========================================================================
+Received Import Request.
+  Time since last request: 3.523599 seconds.
+  path: Assets/Prefabs/ScatterplotMatrix.prefab
+  artifactKey: Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ScatterplotMatrix.prefab using Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '672c04e393bd329c19bc2eff72cb7533') in 0.215473 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2237
+========================================================================
+Received Import Request.
+  Time since last request: 4.168014 seconds.
+  path: Assets/Prefabs/ScatterplotMatrix.prefab
+  artifactKey: Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ScatterplotMatrix.prefab using Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '7fc15dd6eca1b894b55a273bac3b4e02') in 0.225377 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2237
+========================================================================
+Received Import Request.
+  Time since last request: 6.913629 seconds.
+  path: Assets/Prefabs/ScatterplotMatrix.prefab
+  artifactKey: Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ScatterplotMatrix.prefab using Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'a4b77fab47623868321e727fac0b9de7') in 0.214752 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2237
+========================================================================
+Received Import Request.
+  Time since last request: 4.796437 seconds.
+  path: Assets/Prefabs/ScatterplotMatrix.prefab
+  artifactKey: Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ScatterplotMatrix.prefab using Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'd1eb55123305963552c56b2c1d9cd109') in 0.217252 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2237
+========================================================================
+Received Import Request.
+  Time since last request: 2.646224 seconds.
+  path: Assets/Prefabs/ScatterplotMatrix.prefab
+  artifactKey: Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ScatterplotMatrix.prefab using Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '47119774d94af3385222283c952b6d4f') in 0.222429 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2237
+========================================================================
+Received Import Request.
+  Time since last request: 4.895242 seconds.
+  path: Assets/Prefabs/ScatterplotMatrix.prefab
+  artifactKey: Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ScatterplotMatrix.prefab using Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '48ecc14395a9bf6e099ebc39d76020be') in 0.335368 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2237
+========================================================================
+Received Import Request.
+  Time since last request: 8.212013 seconds.
+  path: Assets/Prefabs/ScatterplotMatrix.prefab
+  artifactKey: Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ScatterplotMatrix.prefab using Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'c89d6b68d48e2ca9693f0077c1dd7fb3') in 0.215168 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2237
+========================================================================
+Received Import Request.
+  Time since last request: 8.229471 seconds.
+  path: Assets/Prefabs/ScatterplotMatrix.prefab
+  artifactKey: Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ScatterplotMatrix.prefab using Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '62e470bec9962f54e8f1bafc41cfe12c') in 0.213522 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2237
+========================================================================
+Received Import Request.
+  Time since last request: 6.850655 seconds.
+  path: Assets/Prefabs/ScatterplotMatrix.prefab
+  artifactKey: Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ScatterplotMatrix.prefab using Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '1c464206d9418734ba5a20400ff4b366') in 0.210144 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2237
+========================================================================
+Received Import Request.
+  Time since last request: 8.773252 seconds.
+  path: Assets/Prefabs/ScatterplotMatrix.prefab
+  artifactKey: Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ScatterplotMatrix.prefab using Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '0a5fd406e2aa16ddeced02ad002291e6') in 0.207040 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2237
+========================================================================
+Received Import Request.
+  Time since last request: 6.088154 seconds.
+  path: Assets/Prefabs/ScatterplotMatrix.prefab
+  artifactKey: Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ScatterplotMatrix.prefab using Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '0d116420fcb922ae7fb26459525864d1') in 0.315145 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2237
+========================================================================
+Received Import Request.
+  Time since last request: 6.421178 seconds.
+  path: Assets/Prefabs/ScatterplotMatrix.prefab
+  artifactKey: Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ScatterplotMatrix.prefab using Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '0935c9eea4858bac95df12569dcbde8b') in 0.216696 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2237
+========================================================================
+Received Import Request.
+  Time since last request: 3.476415 seconds.
+  path: Assets/Prefabs/ScatterplotMatrix.prefab
+  artifactKey: Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ScatterplotMatrix.prefab using Guid(0603c7073791cd143beb4962fa15890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '7ec75505112f46c529db315b11cbfc38') in 0.213189 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2237
 ========================================================================
 Received Prepare
 Caller must complete domain reload
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.795 seconds
+- Loaded All Assemblies, in  0.757 seconds
 Native extension for WindowsStandalone target not found
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
@@ -417,52 +1131,142 @@ Mono: successfully reloaded assembly
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  2.010 seconds
-Domain Reload Profiling: 2800ms
-	BeginReloadAssembly (252ms)
+- Finished resetting the current domain, in  1.969 seconds
+Domain Reload Profiling: 2721ms
+	BeginReloadAssembly (229ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (13ms)
+		DisableScriptedObjects (11ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (65ms)
-	RebuildCommonClasses (51ms)
-	RebuildNativeTypeToScriptingClass (31ms)
-	initialDomainReloadingComplete (37ms)
-	LoadAllAssembliesAndSetupDomain (418ms)
-		LoadAssemblies (507ms)
+	RebuildCommonClasses (49ms)
+	RebuildNativeTypeToScriptingClass (20ms)
+	initialDomainReloadingComplete (44ms)
+	LoadAllAssembliesAndSetupDomain (409ms)
+		LoadAssemblies (485ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (32ms)
+			TypeCache.Refresh (10ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (20ms)
+	FinalizeReload (1969ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (992ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (8ms)
+			SetLoadedEditorAssemblies (5ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (121ms)
+			ProcessInitializeOnLoadAttributes (712ms)
+			ProcessInitializeOnLoadMethodAttributes (134ms)
+			AfterProcessingInitializeOnLoad (12ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (17ms)
+Refreshing native plugins compatible for Editor in 63.16 ms, found 23 plugins.
+Preloading 1 native plugins for Editor in 0.10 ms.
+Unloading 6413 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 119 unused Assets / (2.1 MB). Loaded Objects now: 7000.
+Memory consumption went from 236.5 MB to 234.4 MB.
+Total: 7.488500 ms (FindLiveObjects: 0.908300 ms CreateObjectMapping: 0.868700 ms MarkObjects: 4.647600 ms  DeleteObjects: 1.062600 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.763 seconds
+Native extension for WindowsStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+System.NullReferenceException: Object reference not set to an instance of an object
+  at UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets.RenderPipelineValidation..cctor () [0x0000d] in C:\Users\itolab\Desktop\rollingthedice\Assets\Samples\XR Interaction Toolkit\3.0.3\Starter Assets\Scripts\MaterialPipelineHandler.cs:16 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0003d] in .\Library\PackageCache\com.unity.xr.oculus@4.4.0\Runtime\OculusLoader.cs:307 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0008c] in .\Library\PackageCache\com.unity.xr.oculus@4.4.0\Runtime\OculusLoader.cs:292 
+  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <de920293e401402ab375ad8a2e1b19da>:0 
+   --- End of inner exception stack trace ---
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00083] in <de920293e401402ab375ad8a2e1b19da>:0 
+  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <de920293e401402ab375ad8a2e1b19da>:0 
+  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x000a5] in <c4b0cc57ec424a5a9b1c3b56141bb74a>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+Mono: successfully reloaded assembly
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  1.993 seconds
+Domain Reload Profiling: 2747ms
+	BeginReloadAssembly (211ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (5ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (49ms)
+	RebuildCommonClasses (47ms)
+	RebuildNativeTypeToScriptingClass (19ms)
+	initialDomainReloadingComplete (48ms)
+	LoadAllAssembliesAndSetupDomain (429ms)
+		LoadAssemblies (506ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
 		AnalyzeDomain (35ms)
 			TypeCache.Refresh (9ms)
 				TypeCache.ScanAssembly (0ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (23ms)
-	FinalizeReload (2011ms)
+			ResolveRequiredComponents (24ms)
+	FinalizeReload (1993ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1016ms)
+		SetupLoadedEditorAssemblies (998ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (9ms)
+			InitializePlatformSupportModulesInManaged (10ms)
 			SetLoadedEditorAssemblies (4ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (127ms)
-			ProcessInitializeOnLoadAttributes (729ms)
+			BeforeProcessingInitializeOnLoad (129ms)
+			ProcessInitializeOnLoadAttributes (710ms)
 			ProcessInitializeOnLoadMethodAttributes (134ms)
-			AfterProcessingInitializeOnLoad (12ms)
+			AfterProcessingInitializeOnLoad (10ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (18ms)
-Refreshing native plugins compatible for Editor in 75.02 ms, found 23 plugins.
-Preloading 1 native plugins for Editor in 0.10 ms.
+		AwakeInstancesAfterBackupRestoration (15ms)
+Refreshing native plugins compatible for Editor in 51.89 ms, found 23 plugins.
+Preloading 1 native plugins for Editor in 0.21 ms.
 Unloading 6413 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 119 unused Assets / (2.1 MB). Loaded Objects now: 7043.
-Memory consumption went from 232.4 MB to 230.3 MB.
-Total: 9.301800 ms (FindLiveObjects: 0.690900 ms CreateObjectMapping: 0.900400 ms MarkObjects: 5.455600 ms  DeleteObjects: 2.253800 ms)
+Unloading 119 unused Assets / (2.0 MB). Loaded Objects now: 7005.
+Memory consumption went from 236.4 MB to 234.4 MB.
+Total: 5.654800 ms (FindLiveObjects: 0.536600 ms CreateObjectMapping: 0.643800 ms MarkObjects: 3.426100 ms  DeleteObjects: 1.047400 ms)
 
-Prepare: number of updated asset objects reloaded= 57
+Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
-  custom:scripting/monoscript/fileName/LabelOrienter_Smooth.cs: b50405f3a032c915c170284bfefdd598 -> 
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:scripting/monoscript/fileName/ClickObject.cs: baf33ca2ba035001dfefd9118c08d31e -> 
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
@@ -470,13 +1274,1049 @@ AssetImportParameters requested are different than current active one (requested
   custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:scripting/precompiled-assembly-types:Assembly-CSharp: ebc0fe8e75f801fec9e33031e6eb4b6d -> 8f641899de7d63885143bfe987b94054
-  custom:scripting/monoscript/fileName/CSVData.cs: 477b07e867a712989258eb0773e0c7b2 -> 
   custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:scripting/monoscript/fileName/DataPointInfoDisplay.cs: 80c1fe2958dfaad0a07bc0394c2f92b4 -> 
   custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:scripting/monoscript/fileName/PointRenderer.cs: 7a6872d6e87dcca86e82f6ff2d469cb6 -> 
-  custom:scripting/monoscript/fileName/CSVReader.cs: cdcdcb440722df93af9171927749805e -> 
+========================================================================
+Received Import Request.
+  Time since last request: 568.858595 seconds.
+  path: Assets/Resources
+  artifactKey: Guid(031b1460a9759dd42bcd252d198478a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources using Guid(031b1460a9759dd42bcd252d198478a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'e9e04b67af33d1a545c5427f6766bac6') in 0.004032 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.767 seconds
+Native extension for WindowsStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+System.NullReferenceException: Object reference not set to an instance of an object
+  at UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets.RenderPipelineValidation..cctor () [0x0000d] in C:\Users\itolab\Desktop\rollingthedice\Assets\Samples\XR Interaction Toolkit\3.0.3\Starter Assets\Scripts\MaterialPipelineHandler.cs:16 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0003d] in .\Library\PackageCache\com.unity.xr.oculus@4.4.0\Runtime\OculusLoader.cs:307 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0008c] in .\Library\PackageCache\com.unity.xr.oculus@4.4.0\Runtime\OculusLoader.cs:292 
+  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <de920293e401402ab375ad8a2e1b19da>:0 
+   --- End of inner exception stack trace ---
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00083] in <de920293e401402ab375ad8a2e1b19da>:0 
+  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <de920293e401402ab375ad8a2e1b19da>:0 
+  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x000a5] in <c4b0cc57ec424a5a9b1c3b56141bb74a>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+Mono: successfully reloaded assembly
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  2.042 seconds
+Domain Reload Profiling: 2804ms
+	BeginReloadAssembly (214ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (6ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (49ms)
+	RebuildCommonClasses (57ms)
+	RebuildNativeTypeToScriptingClass (20ms)
+	initialDomainReloadingComplete (46ms)
+	LoadAllAssembliesAndSetupDomain (424ms)
+		LoadAssemblies (505ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (34ms)
+			TypeCache.Refresh (8ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (24ms)
+	FinalizeReload (2043ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1049ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (8ms)
+			SetLoadedEditorAssemblies (5ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (134ms)
+			ProcessInitializeOnLoadAttributes (752ms)
+			ProcessInitializeOnLoadMethodAttributes (139ms)
+			AfterProcessingInitializeOnLoad (10ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (18ms)
+Refreshing native plugins compatible for Editor in 54.48 ms, found 23 plugins.
+Preloading 1 native plugins for Editor in 0.07 ms.
+Unloading 6413 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 119 unused Assets / (2.1 MB). Loaded Objects now: 7010.
+Memory consumption went from 236.5 MB to 234.4 MB.
+Total: 5.357200 ms (FindLiveObjects: 0.551100 ms CreateObjectMapping: 0.576000 ms MarkObjects: 3.211800 ms  DeleteObjects: 1.016900 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.715 seconds
+Native extension for WindowsStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+System.NullReferenceException: Object reference not set to an instance of an object
+  at UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets.RenderPipelineValidation..cctor () [0x0000d] in C:\Users\itolab\Desktop\rollingthedice\Assets\Samples\XR Interaction Toolkit\3.0.3\Starter Assets\Scripts\MaterialPipelineHandler.cs:16 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0003d] in .\Library\PackageCache\com.unity.xr.oculus@4.4.0\Runtime\OculusLoader.cs:307 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0008c] in .\Library\PackageCache\com.unity.xr.oculus@4.4.0\Runtime\OculusLoader.cs:292 
+  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <de920293e401402ab375ad8a2e1b19da>:0 
+   --- End of inner exception stack trace ---
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00083] in <de920293e401402ab375ad8a2e1b19da>:0 
+  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <de920293e401402ab375ad8a2e1b19da>:0 
+  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x000a5] in <c4b0cc57ec424a5a9b1c3b56141bb74a>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+Mono: successfully reloaded assembly
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  2.034 seconds
+Domain Reload Profiling: 2743ms
+	BeginReloadAssembly (201ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (5ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (46ms)
+	RebuildCommonClasses (49ms)
+	RebuildNativeTypeToScriptingClass (14ms)
+	initialDomainReloadingComplete (41ms)
+	LoadAllAssembliesAndSetupDomain (403ms)
+		LoadAssemblies (481ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (29ms)
+			TypeCache.Refresh (9ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (18ms)
+	FinalizeReload (2035ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1061ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (9ms)
+			SetLoadedEditorAssemblies (5ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (132ms)
+			ProcessInitializeOnLoadAttributes (770ms)
+			ProcessInitializeOnLoadMethodAttributes (134ms)
+			AfterProcessingInitializeOnLoad (12ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (18ms)
+Refreshing native plugins compatible for Editor in 58.17 ms, found 23 plugins.
+Preloading 1 native plugins for Editor in 0.07 ms.
+Unloading 6413 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 119 unused Assets / (2.1 MB). Loaded Objects now: 7015.
+Memory consumption went from 236.5 MB to 234.4 MB.
+Total: 9.291300 ms (FindLiveObjects: 0.871400 ms CreateObjectMapping: 0.981400 ms MarkObjects: 5.885700 ms  DeleteObjects: 1.551900 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.778 seconds
+Native extension for WindowsStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+System.NullReferenceException: Object reference not set to an instance of an object
+  at UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets.RenderPipelineValidation..cctor () [0x0000d] in C:\Users\itolab\Desktop\rollingthedice\Assets\Samples\XR Interaction Toolkit\3.0.3\Starter Assets\Scripts\MaterialPipelineHandler.cs:16 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0003d] in .\Library\PackageCache\com.unity.xr.oculus@4.4.0\Runtime\OculusLoader.cs:307 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0008c] in .\Library\PackageCache\com.unity.xr.oculus@4.4.0\Runtime\OculusLoader.cs:292 
+  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <de920293e401402ab375ad8a2e1b19da>:0 
+   --- End of inner exception stack trace ---
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00083] in <de920293e401402ab375ad8a2e1b19da>:0 
+  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <de920293e401402ab375ad8a2e1b19da>:0 
+  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x000a5] in <c4b0cc57ec424a5a9b1c3b56141bb74a>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+Mono: successfully reloaded assembly
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  2.037 seconds
+Domain Reload Profiling: 2806ms
+	BeginReloadAssembly (218ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (5ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (52ms)
+	RebuildCommonClasses (54ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (44ms)
+	LoadAllAssembliesAndSetupDomain (440ms)
+		LoadAssemblies (511ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (44ms)
+			TypeCache.Refresh (9ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (32ms)
+	FinalizeReload (2038ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1050ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (10ms)
+			SetLoadedEditorAssemblies (6ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (127ms)
+			ProcessInitializeOnLoadAttributes (761ms)
+			ProcessInitializeOnLoadMethodAttributes (133ms)
+			AfterProcessingInitializeOnLoad (11ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (15ms)
+Refreshing native plugins compatible for Editor in 57.60 ms, found 23 plugins.
+Preloading 1 native plugins for Editor in 0.07 ms.
+Unloading 6413 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 119 unused Assets / (2.0 MB). Loaded Objects now: 7020.
+Memory consumption went from 236.4 MB to 234.4 MB.
+Total: 7.707800 ms (FindLiveObjects: 0.662600 ms CreateObjectMapping: 1.625800 ms MarkObjects: 4.332600 ms  DeleteObjects: 1.085600 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 424.619445 seconds.
+  path: Assets/Materials/Frame_mat 1.mat
+  artifactKey: Guid(0264a07591eca8a45a24d7961740149f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Frame_mat 1.mat using Guid(0264a07591eca8a45a24d7961740149f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '884c62e4a723e24173d3c226c3a19579') in 0.345036 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 11.235392 seconds.
+  path: Assets/Materials/highlighted.mat
+  artifactKey: Guid(0264a07591eca8a45a24d7961740149f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/highlighted.mat using Guid(0264a07591eca8a45a24d7961740149f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '0c0b7788ac5bf1ea166027d0a05e64ef') in 0.020255 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.747 seconds
+Native extension for WindowsStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+System.NullReferenceException: Object reference not set to an instance of an object
+  at UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets.RenderPipelineValidation..cctor () [0x0000d] in C:\Users\itolab\Desktop\rollingthedice\Assets\Samples\XR Interaction Toolkit\3.0.3\Starter Assets\Scripts\MaterialPipelineHandler.cs:16 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0003d] in .\Library\PackageCache\com.unity.xr.oculus@4.4.0\Runtime\OculusLoader.cs:307 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0008c] in .\Library\PackageCache\com.unity.xr.oculus@4.4.0\Runtime\OculusLoader.cs:292 
+  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <de920293e401402ab375ad8a2e1b19da>:0 
+   --- End of inner exception stack trace ---
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00083] in <de920293e401402ab375ad8a2e1b19da>:0 
+  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <de920293e401402ab375ad8a2e1b19da>:0 
+  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x000a5] in <c4b0cc57ec424a5a9b1c3b56141bb74a>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+Mono: successfully reloaded assembly
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  2.055 seconds
+Domain Reload Profiling: 2796ms
+	BeginReloadAssembly (227ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (12ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (59ms)
+	RebuildCommonClasses (46ms)
+	RebuildNativeTypeToScriptingClass (17ms)
+	initialDomainReloadingComplete (40ms)
+	LoadAllAssembliesAndSetupDomain (410ms)
+		LoadAssemblies (488ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (31ms)
+			TypeCache.Refresh (10ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (18ms)
+	FinalizeReload (2056ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1011ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (10ms)
+			SetLoadedEditorAssemblies (5ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (128ms)
+			ProcessInitializeOnLoadAttributes (719ms)
+			ProcessInitializeOnLoadMethodAttributes (136ms)
+			AfterProcessingInitializeOnLoad (13ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (15ms)
+Refreshing native plugins compatible for Editor in 57.63 ms, found 23 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
+Unloading 6413 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 119 unused Assets / (2.1 MB). Loaded Objects now: 7092.
+Memory consumption went from 236.8 MB to 234.7 MB.
+Total: 5.774300 ms (FindLiveObjects: 0.641900 ms CreateObjectMapping: 0.664400 ms MarkObjects: 3.150700 ms  DeleteObjects: 1.316300 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.747 seconds
+Native extension for WindowsStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+System.NullReferenceException: Object reference not set to an instance of an object
+  at UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets.RenderPipelineValidation..cctor () [0x0000d] in C:\Users\itolab\Desktop\rollingthedice\Assets\Samples\XR Interaction Toolkit\3.0.3\Starter Assets\Scripts\MaterialPipelineHandler.cs:16 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0003d] in .\Library\PackageCache\com.unity.xr.oculus@4.4.0\Runtime\OculusLoader.cs:307 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0008c] in .\Library\PackageCache\com.unity.xr.oculus@4.4.0\Runtime\OculusLoader.cs:292 
+  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <de920293e401402ab375ad8a2e1b19da>:0 
+   --- End of inner exception stack trace ---
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00083] in <de920293e401402ab375ad8a2e1b19da>:0 
+  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <de920293e401402ab375ad8a2e1b19da>:0 
+  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x000a5] in <c4b0cc57ec424a5a9b1c3b56141bb74a>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+Mono: successfully reloaded assembly
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  2.034 seconds
+Domain Reload Profiling: 2772ms
+	BeginReloadAssembly (218ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (5ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (54ms)
+	RebuildCommonClasses (49ms)
+	RebuildNativeTypeToScriptingClass (19ms)
+	initialDomainReloadingComplete (38ms)
+	LoadAllAssembliesAndSetupDomain (414ms)
+		LoadAssemblies (492ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (31ms)
+			TypeCache.Refresh (9ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (19ms)
+	FinalizeReload (2035ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1013ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (10ms)
+			SetLoadedEditorAssemblies (6ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (129ms)
+			ProcessInitializeOnLoadAttributes (724ms)
+			ProcessInitializeOnLoadMethodAttributes (132ms)
+			AfterProcessingInitializeOnLoad (11ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (20ms)
+Refreshing native plugins compatible for Editor in 54.49 ms, found 23 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
+Unloading 6413 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 119 unused Assets / (2.0 MB). Loaded Objects now: 7097.
+Memory consumption went from 236.7 MB to 234.6 MB.
+Total: 5.183400 ms (FindLiveObjects: 0.547200 ms CreateObjectMapping: 0.521200 ms MarkObjects: 3.069200 ms  DeleteObjects: 1.045000 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.781 seconds
+Native extension for WindowsStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+System.NullReferenceException: Object reference not set to an instance of an object
+  at UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets.RenderPipelineValidation..cctor () [0x0000d] in C:\Users\itolab\Desktop\rollingthedice\Assets\Samples\XR Interaction Toolkit\3.0.3\Starter Assets\Scripts\MaterialPipelineHandler.cs:16 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0003d] in .\Library\PackageCache\com.unity.xr.oculus@4.4.0\Runtime\OculusLoader.cs:307 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0008c] in .\Library\PackageCache\com.unity.xr.oculus@4.4.0\Runtime\OculusLoader.cs:292 
+  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <de920293e401402ab375ad8a2e1b19da>:0 
+   --- End of inner exception stack trace ---
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00083] in <de920293e401402ab375ad8a2e1b19da>:0 
+  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <de920293e401402ab375ad8a2e1b19da>:0 
+  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x000a5] in <c4b0cc57ec424a5a9b1c3b56141bb74a>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+Mono: successfully reloaded assembly
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  2.078 seconds
+Domain Reload Profiling: 2852ms
+	BeginReloadAssembly (211ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (5ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (51ms)
+	RebuildCommonClasses (52ms)
+	RebuildNativeTypeToScriptingClass (16ms)
+	initialDomainReloadingComplete (43ms)
+	LoadAllAssembliesAndSetupDomain (452ms)
+		LoadAssemblies (519ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (41ms)
+			TypeCache.Refresh (8ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (29ms)
+	FinalizeReload (2078ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1051ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (7ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (133ms)
+			ProcessInitializeOnLoadAttributes (752ms)
+			ProcessInitializeOnLoadMethodAttributes (143ms)
+			AfterProcessingInitializeOnLoad (11ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (16ms)
+Refreshing native plugins compatible for Editor in 65.00 ms, found 23 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
+Unloading 6413 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 119 unused Assets / (2.0 MB). Loaded Objects now: 7102.
+Memory consumption went from 236.7 MB to 234.6 MB.
+Total: 5.498700 ms (FindLiveObjects: 0.591900 ms CreateObjectMapping: 0.590300 ms MarkObjects: 3.202900 ms  DeleteObjects: 1.112800 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.733 seconds
+Native extension for WindowsStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+System.NullReferenceException: Object reference not set to an instance of an object
+  at UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets.RenderPipelineValidation..cctor () [0x0000d] in C:\Users\itolab\Desktop\rollingthedice\Assets\Samples\XR Interaction Toolkit\3.0.3\Starter Assets\Scripts\MaterialPipelineHandler.cs:16 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0003d] in .\Library\PackageCache\com.unity.xr.oculus@4.4.0\Runtime\OculusLoader.cs:307 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0008c] in .\Library\PackageCache\com.unity.xr.oculus@4.4.0\Runtime\OculusLoader.cs:292 
+  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <de920293e401402ab375ad8a2e1b19da>:0 
+   --- End of inner exception stack trace ---
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00083] in <de920293e401402ab375ad8a2e1b19da>:0 
+  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <de920293e401402ab375ad8a2e1b19da>:0 
+  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x000a5] in <c4b0cc57ec424a5a9b1c3b56141bb74a>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+Mono: successfully reloaded assembly
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  2.021 seconds
+Domain Reload Profiling: 2748ms
+	BeginReloadAssembly (210ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (5ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (53ms)
+	RebuildCommonClasses (51ms)
+	RebuildNativeTypeToScriptingClass (18ms)
+	initialDomainReloadingComplete (38ms)
+	LoadAllAssembliesAndSetupDomain (410ms)
+		LoadAssemblies (484ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (31ms)
+			TypeCache.Refresh (8ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (19ms)
+	FinalizeReload (2021ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1045ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (10ms)
+			SetLoadedEditorAssemblies (6ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (145ms)
+			ProcessInitializeOnLoadAttributes (734ms)
+			ProcessInitializeOnLoadMethodAttributes (138ms)
+			AfterProcessingInitializeOnLoad (11ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (19ms)
+Refreshing native plugins compatible for Editor in 55.65 ms, found 23 plugins.
+Preloading 1 native plugins for Editor in 0.12 ms.
+Unloading 6413 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 119 unused Assets / (2.0 MB). Loaded Objects now: 7107.
+Memory consumption went from 236.7 MB to 234.7 MB.
+Total: 7.138700 ms (FindLiveObjects: 0.567200 ms CreateObjectMapping: 0.667100 ms MarkObjects: 4.830200 ms  DeleteObjects: 1.073300 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.744 seconds
+Native extension for WindowsStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+System.NullReferenceException: Object reference not set to an instance of an object
+  at UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets.RenderPipelineValidation..cctor () [0x0000d] in C:\Users\itolab\Desktop\rollingthedice\Assets\Samples\XR Interaction Toolkit\3.0.3\Starter Assets\Scripts\MaterialPipelineHandler.cs:16 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0003d] in .\Library\PackageCache\com.unity.xr.oculus@4.4.0\Runtime\OculusLoader.cs:307 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0008c] in .\Library\PackageCache\com.unity.xr.oculus@4.4.0\Runtime\OculusLoader.cs:292 
+  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <de920293e401402ab375ad8a2e1b19da>:0 
+   --- End of inner exception stack trace ---
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00083] in <de920293e401402ab375ad8a2e1b19da>:0 
+  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <de920293e401402ab375ad8a2e1b19da>:0 
+  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x000a5] in <c4b0cc57ec424a5a9b1c3b56141bb74a>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+Mono: successfully reloaded assembly
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  2.023 seconds
+Domain Reload Profiling: 2761ms
+	BeginReloadAssembly (216ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (7ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (52ms)
+	RebuildCommonClasses (50ms)
+	RebuildNativeTypeToScriptingClass (14ms)
+	initialDomainReloadingComplete (40ms)
+	LoadAllAssembliesAndSetupDomain (417ms)
+		LoadAssemblies (496ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (32ms)
+			TypeCache.Refresh (9ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (21ms)
+	FinalizeReload (2024ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1045ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (8ms)
+			SetLoadedEditorAssemblies (5ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (128ms)
+			ProcessInitializeOnLoadAttributes (750ms)
+			ProcessInitializeOnLoadMethodAttributes (144ms)
+			AfterProcessingInitializeOnLoad (10ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (16ms)
+Refreshing native plugins compatible for Editor in 57.85 ms, found 23 plugins.
+Preloading 1 native plugins for Editor in 0.10 ms.
+Unloading 6413 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 119 unused Assets / (2.1 MB). Loaded Objects now: 7112.
+Memory consumption went from 236.8 MB to 234.7 MB.
+Total: 6.886600 ms (FindLiveObjects: 1.174000 ms CreateObjectMapping: 0.738600 ms MarkObjects: 3.851500 ms  DeleteObjects: 1.121100 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.727 seconds
+Native extension for WindowsStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+System.NullReferenceException: Object reference not set to an instance of an object
+  at UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets.RenderPipelineValidation..cctor () [0x0000d] in C:\Users\itolab\Desktop\rollingthedice\Assets\Samples\XR Interaction Toolkit\3.0.3\Starter Assets\Scripts\MaterialPipelineHandler.cs:16 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0003d] in .\Library\PackageCache\com.unity.xr.oculus@4.4.0\Runtime\OculusLoader.cs:307 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0008c] in .\Library\PackageCache\com.unity.xr.oculus@4.4.0\Runtime\OculusLoader.cs:292 
+  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <de920293e401402ab375ad8a2e1b19da>:0 
+   --- End of inner exception stack trace ---
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00083] in <de920293e401402ab375ad8a2e1b19da>:0 
+  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <de920293e401402ab375ad8a2e1b19da>:0 
+  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x000a5] in <c4b0cc57ec424a5a9b1c3b56141bb74a>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+Mono: successfully reloaded assembly
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  2.035 seconds
+Domain Reload Profiling: 2754ms
+	BeginReloadAssembly (207ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (5ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (49ms)
+	RebuildCommonClasses (47ms)
+	RebuildNativeTypeToScriptingClass (15ms)
+	initialDomainReloadingComplete (42ms)
+	LoadAllAssembliesAndSetupDomain (407ms)
+		LoadAssemblies (481ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (31ms)
+			TypeCache.Refresh (9ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (20ms)
+	FinalizeReload (2036ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1035ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (9ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (126ms)
+			ProcessInitializeOnLoadAttributes (744ms)
+			ProcessInitializeOnLoadMethodAttributes (140ms)
+			AfterProcessingInitializeOnLoad (11ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (20ms)
+Refreshing native plugins compatible for Editor in 54.51 ms, found 23 plugins.
+Preloading 1 native plugins for Editor in 0.07 ms.
+Unloading 6413 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 119 unused Assets / (2.0 MB). Loaded Objects now: 7117.
+Memory consumption went from 236.7 MB to 234.7 MB.
+Total: 6.016800 ms (FindLiveObjects: 0.638500 ms CreateObjectMapping: 0.631200 ms MarkObjects: 3.315400 ms  DeleteObjects: 1.430200 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.735 seconds
+Native extension for WindowsStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+System.NullReferenceException: Object reference not set to an instance of an object
+  at UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets.RenderPipelineValidation..cctor () [0x0000d] in C:\Users\itolab\Desktop\rollingthedice\Assets\Samples\XR Interaction Toolkit\3.0.3\Starter Assets\Scripts\MaterialPipelineHandler.cs:16 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0003d] in .\Library\PackageCache\com.unity.xr.oculus@4.4.0\Runtime\OculusLoader.cs:307 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0008c] in .\Library\PackageCache\com.unity.xr.oculus@4.4.0\Runtime\OculusLoader.cs:292 
+  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <de920293e401402ab375ad8a2e1b19da>:0 
+   --- End of inner exception stack trace ---
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00083] in <de920293e401402ab375ad8a2e1b19da>:0 
+  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <de920293e401402ab375ad8a2e1b19da>:0 
+  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x000a5] in <c4b0cc57ec424a5a9b1c3b56141bb74a>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+Mono: successfully reloaded assembly
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  1.966 seconds
+Domain Reload Profiling: 2695ms
+	BeginReloadAssembly (219ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (5ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (53ms)
+	RebuildCommonClasses (45ms)
+	RebuildNativeTypeToScriptingClass (19ms)
+	initialDomainReloadingComplete (40ms)
+	LoadAllAssembliesAndSetupDomain (405ms)
+		LoadAssemblies (485ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (34ms)
+			TypeCache.Refresh (8ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (22ms)
+	FinalizeReload (1966ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1011ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (12ms)
+			SetLoadedEditorAssemblies (6ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (120ms)
+			ProcessInitializeOnLoadAttributes (729ms)
+			ProcessInitializeOnLoadMethodAttributes (133ms)
+			AfterProcessingInitializeOnLoad (11ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (18ms)
+Refreshing native plugins compatible for Editor in 55.54 ms, found 23 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
+Unloading 6413 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 119 unused Assets / (2.0 MB). Loaded Objects now: 7122.
+Memory consumption went from 237.5 MB to 235.4 MB.
+Total: 8.337300 ms (FindLiveObjects: 0.610400 ms CreateObjectMapping: 0.770100 ms MarkObjects: 5.797400 ms  DeleteObjects: 1.158300 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.773 seconds
+Native extension for WindowsStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+System.NullReferenceException: Object reference not set to an instance of an object
+  at UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets.RenderPipelineValidation..cctor () [0x0000d] in C:\Users\itolab\Desktop\rollingthedice\Assets\Samples\XR Interaction Toolkit\3.0.3\Starter Assets\Scripts\MaterialPipelineHandler.cs:16 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0003d] in .\Library\PackageCache\com.unity.xr.oculus@4.4.0\Runtime\OculusLoader.cs:307 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0008c] in .\Library\PackageCache\com.unity.xr.oculus@4.4.0\Runtime\OculusLoader.cs:292 
+  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <de920293e401402ab375ad8a2e1b19da>:0 
+   --- End of inner exception stack trace ---
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00083] in <de920293e401402ab375ad8a2e1b19da>:0 
+  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <de920293e401402ab375ad8a2e1b19da>:0 
+  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x000a5] in <c4b0cc57ec424a5a9b1c3b56141bb74a>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+Mono: successfully reloaded assembly
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  2.008 seconds
+Domain Reload Profiling: 2774ms
+	BeginReloadAssembly (217ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (7ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (48ms)
+	RebuildCommonClasses (52ms)
+	RebuildNativeTypeToScriptingClass (15ms)
+	initialDomainReloadingComplete (47ms)
+	LoadAllAssembliesAndSetupDomain (435ms)
+		LoadAssemblies (505ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (44ms)
+			TypeCache.Refresh (9ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (27ms)
+	FinalizeReload (2008ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1022ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (9ms)
+			SetLoadedEditorAssemblies (5ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (129ms)
+			ProcessInitializeOnLoadAttributes (732ms)
+			ProcessInitializeOnLoadMethodAttributes (136ms)
+			AfterProcessingInitializeOnLoad (11ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (17ms)
+Refreshing native plugins compatible for Editor in 54.48 ms, found 23 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
+Unloading 6413 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 119 unused Assets / (2.0 MB). Loaded Objects now: 7127.
+Memory consumption went from 236.7 MB to 234.7 MB.
+Total: 6.468200 ms (FindLiveObjects: 0.635800 ms CreateObjectMapping: 0.643900 ms MarkObjects: 3.867800 ms  DeleteObjects: 1.319700 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
