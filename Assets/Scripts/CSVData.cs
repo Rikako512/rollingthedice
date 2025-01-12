@@ -17,6 +17,7 @@ public class CSVData : MonoBehaviour
 
     // List for holding data from CSV reader
     public static List<Dictionary<string, object>> pointList;
+    public static List<string> occupationList = new List<string>(); // Occupationのリスト
     // List for min and max values {columnName, {min, max}}
     public static Dictionary<string, object[]> min_maxList = new Dictionary<string, object[]>();
 
@@ -24,8 +25,21 @@ public class CSVData : MonoBehaviour
 
     void Awake()
     {
-      //Run CSV Reader
-      pointList = CSVReader.Read(inputfile);
+        // Run CSV Reader
+        List<Dictionary<string, object>> fullPointList = CSVReader.Read(inputfile);
+        
+        // Separate Occupation from pointList
+        pointList = new List<Dictionary<string, object>>();
+        foreach (var point in fullPointList)
+        {
+            var newPoint = new Dictionary<string, object>(point);
+            if (newPoint.ContainsKey("Occupation"))
+            {
+                occupationList.Add(newPoint["Occupation"].ToString());
+                newPoint.Remove("Occupation");
+            }
+            pointList.Add(newPoint);
+        }
     }
 
     void Start ()
@@ -97,5 +111,21 @@ public class CSVData : MonoBehaviour
       }
 
       return minValue;
+    }
+
+    public static string GetDataForIndex(int index)
+    {
+        if (index >= 0 && index < pointList.Count)
+        {
+            Dictionary<string, object> data = pointList[index];
+            string result = "";
+            foreach (var kvp in data)
+            {
+                result += $"{kvp.Key}: {kvp.Value}\n";
+            }
+            //result += $"Occupation: {occupationList[index]}\n";
+            return result;
+        }
+        return "Data not found";
     }
 }

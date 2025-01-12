@@ -6,7 +6,7 @@ public class UIPositioner : MonoBehaviour
 {
     private Transform vrCamera;
     public Transform sphere;
-    private Vector3 uiOffset = new Vector3(-0.5f, 0, 0);
+    private Vector3 uiOffset = new Vector3(-0.4f, 0, 0);
 
     void Start()	
     {	

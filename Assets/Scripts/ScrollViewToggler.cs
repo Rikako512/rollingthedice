@@ -8,6 +8,8 @@ public class ScrollViewToggler : MonoBehaviour
 {
     public GameObject scrollView;
     public RectTransform scrollViewContainer;
+    public TextMeshProUGUI scrollText;
+    public GameObject databall;
     private Button toggleButton;
     private bool isVisible = false;
     private float expandedHeight = 450f;
@@ -18,6 +20,7 @@ public class ScrollViewToggler : MonoBehaviour
         toggleButton = GetComponent<Button>();
         toggleButton.onClick.AddListener(ToggleScrollView);
         InitialState(); // 初期状態を設定
+        UpdateScrollText();
     }
 
     void ToggleScrollView()
@@ -38,6 +41,27 @@ public class ScrollViewToggler : MonoBehaviour
         scrollView.SetActive(false);
         scrollViewContainer.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, collapsedHeight);
         toggleButton.GetComponentInChildren<TextMeshProUGUI>().text = "Show";
+    }
+
+    void UpdateScrollText()
+    {
+        if (databall != null)
+        {
+            string dataName = databall.name; // DataBallの名前を取得
+            if (int.TryParse(dataName, out int index))
+            {
+                string data = CSVData.GetDataForIndex(index); // CSVDataからデータを取得
+                scrollText.text = data; // Scroll Textを更新
+            }
+            else
+            {
+                Debug.LogWarning("Invalid data name: " + dataName);
+            }
+        }
+        else
+        {
+            Debug.LogError("Target DataBall is not assigned in the inspector.");
+        }
     }
 
     void OnDestroy()

@@ -3,14 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 using TMPro;
-using UnityEngine;
-using UnityEngine.XR.Interaction.Toolkit;
-using TMPro;
 
 public class InfoUIDisplay : MonoBehaviour
 {
     public GameObject uiContainer; // ScrollViewContainerをアサインする
     public TextMeshProUGUI headerText; // HeaderのTextMeshProUGUIコンポーネントをアサインする
+    public GameObject databall;
     private UnityEngine.XR.Interaction.Toolkit.Interactables.XRSimpleInteractable simpleInteractable;
     private bool isUIVisible = false;
 
@@ -42,13 +40,21 @@ public class InfoUIDisplay : MonoBehaviour
 
     void UpdateHeaderText()
     {
-        if (headerText != null)
+        if (databall != null && headerText != null)
         {
-            headerText.text = gameObject.name; // sphereの名前をHeaderのテキストに設定
+            string dataName = databall.name;
+            if (int.TryParse(dataName, out int index) && index >= 0 && index < CSVData.occupationList.Count)
+            {
+                headerText.text = CSVData.occupationList[index];
+            }
+            else
+            {
+                Debug.LogWarning("Invalid data name or index: " + dataName);
+            }
         }
         else
         {
-            Debug.LogWarning("Header Text component is not assigned in the Inspector.");
+            Debug.LogError("Target Databall or Header Text is not assigned in the inspector.");
         }
     }
 
