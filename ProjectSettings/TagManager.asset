@@ -3,7 +3,14 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Anchor
+  - Scatterplot
+  - Unhighlighted
+  - TestObject
+  - Label
+  - Red_data
+  - Gray_data
   layers:
   - Default
   - TransparentFX

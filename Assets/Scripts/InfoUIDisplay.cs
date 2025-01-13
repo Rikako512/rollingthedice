@@ -85,10 +85,26 @@ public class InfoUIDisplay : MonoBehaviour
 
     void ChangeSphereAppearance(bool selected)
     {
-        if (ballRenderer != null && selectedMaterial != null)
+        if (ballRenderer != null)
+    {
+        Material currentMaterial = ballRenderer.material;
+
+        // RedPointまたはGrayPointの場合は何もしない（そのまま）
+        if (currentMaterial.name.StartsWith("RedPoint") || currentMaterial.name.StartsWith("GrayPoint"))
         {
-            ballRenderer.material = selected ? selectedMaterial : originalMaterial;
+            return;
         }
+
+        // RedPointまたはGrayPoint以外の場合
+        if (selected)
+        {
+            ballRenderer.material = selectedMaterial;
+        }
+        else
+        {
+            ballRenderer.material = originalMaterial;
+        }
+    }
     }
 
     void OnDestroy()

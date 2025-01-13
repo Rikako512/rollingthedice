@@ -10,15 +10,25 @@ public class ScrollViewToggler : MonoBehaviour
     public RectTransform scrollViewContainer;
     public TextMeshProUGUI scrollText;
     public GameObject databall;
-    private Button toggleButton;
+    [SerializeField] private Button toggleButton;
     private bool isVisible = false;
-    private float expandedHeight = 450f;
-    private float collapsedHeight = 136f;
+    private float expandedHeight = 525f;
+    private float collapsedHeight = 211f;
 
     void Start()
     {
-        toggleButton = GetComponent<Button>();
-        toggleButton.onClick.AddListener(ToggleScrollView);
+        if (toggleButton == null)
+        {
+            toggleButton = GetComponent<Button>();
+        }
+        if (toggleButton != null)
+        {
+            toggleButton.onClick.AddListener(ToggleScrollView);
+        }
+        else
+        {
+            Debug.LogError("Toggle Button not found on this GameObject.");
+        }
         InitialState(); // 初期状態を設定
         UpdateScrollText();
     }
@@ -66,6 +76,9 @@ public class ScrollViewToggler : MonoBehaviour
 
     void OnDestroy()
     {
-        toggleButton.onClick.RemoveListener(ToggleScrollView);
+        if (toggleButton != null)
+        {
+            toggleButton.onClick.RemoveListener(ToggleScrollView);
+        }
     }
 }

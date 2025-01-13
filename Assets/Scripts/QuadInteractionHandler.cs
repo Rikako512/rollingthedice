@@ -25,13 +25,16 @@ public class QuadInteractionHandler : MonoBehaviour
     private static int col_Y = -1;
     private static int col_Z = -1;
 
-    public GameObject plotter; // インスペクタで設定するPlotterオブジェクト
+    public GameObject plotter; //大きい方のSP
+    private PointRenderer pointRenderer; //大きい方のSP
+    public TextMeshProUGUI xAxisText;
+    public TextMeshProUGUI yAxisText;
+    public TextMeshProUGUI zAxisText;
 
-    private PointRenderer pointRenderer;
+    public GameObject spawnSPs;
+    public GameObject prefabSP; //popさせるミニSP
+    private static GameObject spawnedPrefab;
 
-    public TextMeshProUGUI xAxisText; // インスペクターで設定
-    public TextMeshProUGUI yAxisText; // インスペクターで設定
-    public TextMeshProUGUI zAxisText; // インスペクターで設定
 
     void Start()
     {
@@ -135,6 +138,7 @@ public class QuadInteractionHandler : MonoBehaviour
         if (col_X >= 0 && col_Y >= 0 && col_Z >= 0)
         {
             UpdatePointRenderer();
+            CheckAndSpawnPrefab();
         }
     }
 
@@ -160,6 +164,31 @@ public class QuadInteractionHandler : MonoBehaviour
             Debug.LogError("PointRenderer is not assigned");
         }
     }
+
+    private void CheckAndSpawnPrefab()
+    {
+        // 既存のprefabを削除
+        if (spawnedPrefab != null)
+        {
+            Destroy(spawnedPrefab);
+            spawnedPrefab = null; // nullに設定して確実に参照を解除
+        }
+
+        // 新しいprefabを生成
+        if (prefabSP != null && spawnSPs != null)
+        {
+            Vector3 spawnPosition = new Vector3(col_Y, col_Z, col_X + 0.5f);
+            spawnedPrefab = Instantiate(prefabSP, spawnSPs.transform);
+            spawnedPrefab.transform.localPosition = spawnPosition;
+            spawnedPrefab.name = $"{col_X}, {col_Y}, {col_Z}"; // 名前を "x, y, z" に設定
+        }
+        else
+        {
+            Debug.LogWarning("Prefab or spawnSPs is not assigned!");
+        }
+        
+    }
+
     
     private void ParseQuadName(string name)
     {
@@ -345,6 +374,13 @@ public class QuadInteractionHandler : MonoBehaviour
         {
             selectedQuad = null;
             selectedParentName = null;
+        }
+
+        // スクリプトが破棄されるときにprefabも削除
+        if (spawnedPrefab != null)
+        {
+            Destroy(spawnedPrefab);
+            spawnedPrefab = null;
         }
     }
 }
