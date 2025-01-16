@@ -8,12 +8,10 @@ using Debug = UnityEngine.Debug;
 
 public class PointRenderer : MonoBehaviour
 {
-    public bool renderPoints = false;
     //********Public Variables********
     // Bools for editor options
     public bool renderParticles = true;
     //public bool renderPrefabsWithColor = true;
-    public bool only1plot = false; // 散布図行列上で一つの散布図だけ描画する
 
     // Indices for columns to be assigned
     public int column1 = 0;
@@ -66,15 +64,13 @@ public class PointRenderer : MonoBehaviour
     // Particle system for holding point particles
     private ParticleSystem.Particle[] particlePoints;
 
-    void Awake()
+    public void PlotDataPoints(int newColumn1, int newColumn2, int newColumn3)
     {
-
-    }
-
-    // Use this for initialization
-    void Start()
-    {
-        Debug.Log("---------- PointRenderer開始 ----------");
+        Debug.Log("---------- PlotDataPoints開始 ----------");
+        
+        column1 = newColumn2;
+        column2 = newColumn3;
+        column3 = newColumn1;
 
         // Store dictionary keys (column names in CSV) in a list
         List<string> columnList = new List<string>(CSVData.pointList[1].Keys);
@@ -92,22 +88,8 @@ public class PointRenderer : MonoBehaviour
         yMin = Convert.ToSingle(CSVData.min_maxList[yColumnName][0]);
         zMin = Convert.ToSingle(CSVData.min_maxList[zColumnName][0]);
 
-        
-
-        if (renderPoints == true)
-        {
-            AssignLabels();
-            PlacePrefabPoints();
-
-            if (only1plot == true)
-            {
-                // column1, column2, column3が特定の場合のみ実行
-                if (column1 == 1 && column2 == 0 && column3 == 3)
-                {
-                    PlacePrefabPoints();
-                }
-            }
-        }
+        AssignLabels();
+        PlacePrefabPoints();
 
         // If statement to turn particles on and off
         if (renderParticles == true)
@@ -119,20 +101,13 @@ public class PointRenderer : MonoBehaviour
             GetComponent<ParticleSystem>().SetParticles(particlePoints, particlePoints.Length);
         }
 
-        Debug.Log("---------- PointRenderer終了：(" + column1 + ", " + column2 + ", " + column3 + ") ----------");
-    }
-
-
-    // Update is called once per frame
-    void Update()
-    {
-
+        Debug.Log("---------- PlotDataPoints終了：(" + column1 + ", " + column2 + ", " + column3 + ") ----------");
     }
 
     // Places the prefabs according to values read in
     private void PlacePrefabPoints()
     {
-        Debug.Log("---------- PlacePrefabPoints 開始 ----------");
+        //Debug.Log("---------- PlacePrefabPoints 開始 ----------");
         // Get count (number of rows in table)
         rowCount = CSVData.pointList.Count;
 
@@ -177,7 +152,7 @@ public class PointRenderer : MonoBehaviour
 
         }
 
-        Debug.Log("---------- PlacePrefabPoints 終了 ----------");
+        //Debug.Log("---------- PlacePrefabPoints 終了 ----------");
     }
 
     private void CreateParticles()
@@ -225,9 +200,9 @@ public class PointRenderer : MonoBehaviour
 
     public void UpdateDataPoints(int newColumn1, int newColumn2, int newColumn3)
     {
-        column1 = newColumn1;
-        column2 = newColumn2;
-        column3 = newColumn3;
+        column1 = newColumn2;
+        column2 = newColumn3;
+        column3 = newColumn1;
 
         // 列名を更新
         List<string> columnList = new List<string>(CSVData.pointList[1].Keys);
@@ -244,48 +219,16 @@ public class PointRenderer : MonoBehaviour
         zMin = Convert.ToSingle(CSVData.min_maxList[zColumnName][0]);
 
         // データ点の位置を更新
-        //UpdatePointPositions();
-        if (renderPoints)
-        {
-            StartCoroutine(MoveDataPoints());
-        }
-
+        StartCoroutine(MoveDataPoints());
+        
         if (renderParticles)
         {
             UpdateParticles();
         }
 
         AssignLabels();
+        Debug.Log("---------- UpdateDataPoints終了：(" + column1 + ", " + column2 + ", " + column3 + ") ----------");
     }
-    /*
-    private void UpdatePointPositions()
-    {
-        for (int i = 0; i < rowCount; i++)
-        {
-            float x = (Convert.ToSingle(CSVData.pointList[i][xColumnName]) - xMin) / (xMax - xMin);
-            float y = (Convert.ToSingle(CSVData.pointList[i][yColumnName]) - yMin) / (yMax - yMin);
-            float z = (Convert.ToSingle(CSVData.pointList[i][zColumnName]) - zMin) / (zMax - zMin);
-
-            Vector3 position = new Vector3(x, y, z) * plotScale;
-
-            if (renderPoints)
-            {
-                PointHolder.transform.GetChild(i).localPosition = position;
-            }
-
-            if (renderParticles)
-            {
-                particlePoints[i].position = position;
-                particlePoints[i].startColor = new Color(x, y, z, 1.0f);
-            }
-        }
-
-        if (renderParticles)
-        {
-            GetComponent<ParticleSystem>().SetParticles(particlePoints, particlePoints.Length);
-        }
-    }
-    */
 
     private void UpdateParticles()
     {
@@ -342,7 +285,7 @@ public class PointRenderer : MonoBehaviour
             yield return null;
         }
 
-        Debug.Log("Data points movement completed");
+        //Debug.Log("Data points movement completed");
     }
 
 }

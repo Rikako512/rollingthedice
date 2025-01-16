@@ -213,7 +213,6 @@ public class ClickObject : MonoBehaviour, IPointerClickHandler
         plotterScript.column1 = click_X;
         plotterScript.column2 = click_Y;
         plotterScript.column3 = click_Z;
-        plotterScript.renderPoints = true;
 
         /*
         plotter.SetActive(false); // データ点が2重に作成されてしまうのを防ぐため、無効にしておく

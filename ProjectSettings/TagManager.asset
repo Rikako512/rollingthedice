@@ -11,6 +11,7 @@ TagManager:
   - Label
   - Red_data
   - Gray_data
+  - floor
   layers:
   - Default
   - TransparentFX

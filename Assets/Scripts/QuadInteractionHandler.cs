@@ -25,6 +25,11 @@ public class QuadInteractionHandler : MonoBehaviour
     private static int col_Y = -1;
     private static int col_Z = -1;
 
+    private Vector3 relativePositionToParent;
+    private static float position_X;
+    private static float position_Y;
+    private static float position_Z;
+
     public GameObject plotter; //大きい方のSP
     private PointRenderer pointRenderer; //大きい方のSP
     public TextMeshProUGUI xAxisText;
@@ -34,6 +39,8 @@ public class QuadInteractionHandler : MonoBehaviour
     public GameObject spawnSPs;
     public GameObject prefabSP; //popさせるミニSP
     private static GameObject spawnedPrefab;
+
+    public GameObject pointcontainer;
 
 
     void Start()
@@ -67,7 +74,14 @@ public class QuadInteractionHandler : MonoBehaviour
         selectedQuad = this;
         selectedParentName = transform.parent?.name ?? "No parent";
         Debug.Log($"Quad: {selectedParentName} {gameObject.name} selected");
-        
+   
+        // 親に対する相対座標を出力
+        if (transform.parent != null)
+        {
+            relativePositionToParent = transform.localPosition;
+            //Debug.Log($"Quad Position (Relative to Parent): {relativePositionToParent}");
+        }
+
         // 新しく追加: 選択されたQuadの値を解析して代入
         AssignColumnValues(gameObject.name, selectedParentName);
         
@@ -118,14 +132,20 @@ public class QuadInteractionHandler : MonoBehaviour
             case "Right":
                 col_Z = value1;
                 col_X = value2;
+                position_Y = (float)relativePositionToParent.y;
+                position_Z = 7.5f - (float)relativePositionToParent.x;
                 break;
             case "Left":
                 col_Z = value1;
                 col_Y = value2;
+                position_X = (float)relativePositionToParent.x;
+                position_Y = (float)relativePositionToParent.y;
                 break;
             case "Floor":
                 col_X = value2;
                 col_Y = value1;
+                position_Z = 7.5f - (float)relativePositionToParent.x;
+                position_X = 7f - (float)relativePositionToParent.y;
                 break;
             default:
                 Debug.LogError($"Unknown parent name: {parentName}");
@@ -156,7 +176,14 @@ public class QuadInteractionHandler : MonoBehaviour
     {
         if (pointRenderer != null)
         {
-            pointRenderer.UpdateDataPoints(col_X, col_Y, col_Z);
+            if (pointcontainer != null && pointcontainer.transform.childCount == 0)
+            {
+                pointRenderer.PlotDataPoints(col_X, col_Y, col_Z);
+            }
+            else
+            {
+                pointRenderer.UpdateDataPoints(col_X, col_Y, col_Z);
+            }
             Debug.Log($"Updated PointRenderer: column1={col_X}, column2={col_Y}, column3={col_Z}");
         }
         else
@@ -177,10 +204,22 @@ public class QuadInteractionHandler : MonoBehaviour
         // 新しいprefabを生成
         if (prefabSP != null && spawnSPs != null)
         {
-            Vector3 spawnPosition = new Vector3(col_Y, col_Z, col_X + 0.5f);
+            Vector3 spawnPosition = new Vector3(position_X, position_Y, position_Z);
+            //Debug.Log(spawnPosition);
             spawnedPrefab = Instantiate(prefabSP, spawnSPs.transform);
             spawnedPrefab.transform.localPosition = spawnPosition;
             spawnedPrefab.name = $"{col_X}, {col_Y}, {col_Z}"; // 名前を "x, y, z" に設定
+
+            Transform graphFrame = spawnedPrefab.transform.Find("GraphFrame");
+            Transform sp_plotter = graphFrame.Find("Plotter");
+            if (sp_plotter != null)
+            {
+                PointRenderer spawned_pointRenderer = sp_plotter.GetComponent<PointRenderer>();
+                if (spawned_pointRenderer != null)
+                {
+                    spawned_pointRenderer.PlotDataPoints(col_X, col_Y, col_Z);
+                }
+            }
         }
         else
         {
