@@ -4,6 +4,7 @@ from scipy.sparse.csgraph import minimum_spanning_tree, connected_components
 from scipy.stats import spearmanr
 from itertools import combinations
 import json
+import heapq
 
 def compute_metrics(dataset, var_indices):
     points = dataset[:, var_indices]
@@ -76,10 +77,14 @@ def compute_metrics(dataset, var_indices):
     
     return outlying, clumpy, skinny, monotonic
 
-def analyze_dataset(dataset, metric, top_n):
+def initialize_data(json_data):
+    point_list = json.loads(json_data)
+    keys = list(point_list[0].keys())
+    data = np.array([[float(point[key]) for key in keys] for point in point_list])
+    
     results = []
-    for var_indices in combinations(range(dataset.shape[1]), 3):
-        outlying, clumpy, skinny, monotonic = compute_metrics(dataset, var_indices)
+    for var_indices in combinations(range(data.shape[1]), 3):
+        outlying, clumpy, skinny, monotonic = compute_metrics(data, var_indices)
         results.append({
             'variables': var_indices,
             'outlying': outlying,
@@ -87,32 +92,12 @@ def analyze_dataset(dataset, metric, top_n):
             'skinny': skinny,
             'monotonic': monotonic
         })
-    
-    sorted_results = sorted(results, key=lambda x: x[metric], reverse=True)[:top_n]
-    top_variables = [entry['variables'] for entry in sorted_results]
-    
-    return top_variables, sorted_results
 
-
-def analyze_unity_data(json_data, metric='outlying', top_n=3):
-    point_list = json.loads(json_data)
-    keys = list(point_list[0].keys())
-    data = np.array([[float(point[key]) for key in keys] for point in point_list])
+    top10_results = {
+        'outlying': heapq.nlargest(10, results, key=lambda x: x['outlying']),
+        'clumpy': heapq.nlargest(10, results, key=lambda x: x['clumpy']),
+        'skinny': heapq.nlargest(10, results, key=lambda x: x['skinny']),
+        'monotonic': heapq.nlargest(10, results, key=lambda x: x['monotonic'])
+    }
     
-    top_variables, _ = analyze_dataset(data, metric, top_n)
-    
-    return json.dumps(top_variables)
-
-    
-if __name__ == "__main__":
-    # テスト用のデータ
-    test_data = [
-        {"x": 1, "y": 2, "z": 3},
-        {"x": 4, "y": 5, "z": 6},
-        {"x": 7, "y": 8, "z": 9}
-    ]
-    json_data = json.dumps(test_data)
-    
-    result = analyze_unity_data(json_data, metric='outlying', top_n=2)
-    print(result)
-
+    return json.dumps({metric: [r['variables'] for r in top10] for metric, top10 in top10_results.items()})

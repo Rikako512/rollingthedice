@@ -195,7 +195,7 @@ MonoBehaviour:
   uiContainer: {fileID: 2223628518284168291}
   headerText: {fileID: 3261874358788755372}
   databall: {fileID: 1103527760695654}
-  selectedMaterial: {fileID: 2100000, guid: b7f34ac2a748c4a4b89c63ee71636e35, type: 2}
+  selectedMaterial: {fileID: 2100000, guid: 5e26387746b8055418dee4c3a4f4817d, type: 2}
 --- !u!1001 &4414916599701565109
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -228,6 +228,10 @@ PrefabInstance:
       propertyPath: databall
       value: 
       objectReference: {fileID: 1103527760695654}
+    - target: {fileID: 1868719735113880777, guid: 755a78c0fcee645418670492b5f79590, type: 3}
+      propertyPath: highlightedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 5e26387746b8055418dee4c3a4f4817d, type: 2}
     - target: {fileID: 1937095140785498484, guid: 755a78c0fcee645418670492b5f79590, type: 3}
       propertyPath: m_PresetInfoIsWorld
       value: 1
@@ -384,6 +388,10 @@ PrefabInstance:
       propertyPath: databall
       value: 
       objectReference: {fileID: 1103527760695654}
+    - target: {fileID: 8347156902184505826, guid: 755a78c0fcee645418670492b5f79590, type: 3}
+      propertyPath: highlightedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 5e26387746b8055418dee4c3a4f4817d, type: 2}
     - target: {fileID: 8561628644957795541, guid: 755a78c0fcee645418670492b5f79590, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0

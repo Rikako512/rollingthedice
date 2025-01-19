@@ -43,6 +43,8 @@ public class ScrollViewToggler : MonoBehaviour
         scrollViewContainer.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, newHeight);
 
         toggleButton.GetComponentInChildren<TextMeshProUGUI>().text = isVisible ? "Close" : "Show";
+
+        Debug.Log("---------- 操作：データ点の詳細を表示しました ----------");
     }
 
     public void InitialState()

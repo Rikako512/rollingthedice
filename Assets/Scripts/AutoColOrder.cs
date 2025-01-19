@@ -13,7 +13,6 @@ public class AutoColOrder : MonoBehaviour
     public Transform columnsParent;
 
     private (List<int>, List<int>) lastResult;
-    public Transform spawnSPs;
     public Transform SPM; // SPMオブジェクトへの参照
     public Transform SPM_select;
 
@@ -25,6 +24,7 @@ public class AutoColOrder : MonoBehaviour
     public ResetOrder resetOrder; // ResetOrderクラスへの参照
 
     private bool isInitialized = false;
+    public SpawnedSPsPositionManager SpawnedSPsPositionManager;
 
     void Start()
     {
@@ -77,7 +77,13 @@ public class AutoColOrder : MonoBehaviour
         }
 
         ApplyOrderedPositions();
-        Debug.Log("---------- Auto Order 完了 ----------");
+
+        if (SpawnedSPsPositionManager != null)
+        {
+            SpawnedSPsPositionManager.ChangeSpawnedSPsPositions();
+        }
+
+        Debug.Log("---------- 操作：Auto Order 完了 ----------");
     }
 
     private void ApplyOrderedPositions()
@@ -90,7 +96,7 @@ public class AutoColOrder : MonoBehaviour
             }
         }
     }
-    
+ 
     void CalculateOrderedPositions()
     {
         // ResetPositionsを呼び出す
@@ -109,8 +115,6 @@ public class AutoColOrder : MonoBehaviour
             Debug.LogError("Columns Parent is not assigned. Please assign it in the inspector.");
             return;
         }
-
-        DestroySpawned();
 
         FindLinkedQuads("X");
         ReorderColumns(lastResult.Item1, "X");
@@ -131,7 +135,9 @@ public class AutoColOrder : MonoBehaviour
         {
             List<Transform>[] currentArray = null;
             if (parentName == "X")
-                currentArray = linkedQuadsArrayX;
+                currentArray = linkedQuadsArrayX; 
+                //currentArrayを通じて行われた変更はlinkedQuadsArrayXにも反映され、linkedQuadsArrayXへの変更もcurrentArrayに反映される。
+                //両者は実質的に同じオブジェクトを指す。
             else if (parentName == "Y")
                 currentArray = linkedQuadsArrayY;
             else if (parentName == "Z")
@@ -177,7 +183,6 @@ public class AutoColOrder : MonoBehaviour
     }
 
 	
-
     private List<Transform> FindAllQuadsInChild(Transform parent, string childName, string columnName, int indexToCheck)
     {
         List<Transform> quads = new List<Transform>();
@@ -232,7 +237,7 @@ public class AutoColOrder : MonoBehaviour
             for (int j = 0; j < currentArray[i].Count; j++)
             {
                 Transform quad = currentArray[i][j];
-                Debug.Log($"NOW: {quad.name}");
+                //Debug.Log($"NOW: {quad.name}");
                 // 初期位置を取得
                 Vector3 initialPosition = initialPositions[quad];
                 Vector3 newPosition = initialPosition;
@@ -282,10 +287,27 @@ public class AutoColOrder : MonoBehaviour
                 if (quad.parent != null)
                 {
                     Vector3 localPosition = quad.localPosition;
-                    if (axisName == "X" || axisName == "Y")
+                    if (axisName == "X")
                     {
-                        localPosition.x = newPosition.x;
-                        localPosition.y = newPosition.y;
+                        if (j == currentArray[i].Count - 1)
+                        {
+                            localPosition.y = newPosition.y;
+                        }
+                        else
+                        {
+                            localPosition.x = newPosition.x;
+                        }
+                    }
+                    else if (axisName == "Y")
+                    {
+                        if (j == currentArray[i].Count - 1 || quad.CompareTag("floor"))
+                        {
+                            localPosition.y = newPosition.y;
+                        }
+                        else
+                        {
+                           localPosition.x = newPosition.x;
+                        }
                     }
                     else if (axisName == "Z")
                     {
@@ -296,30 +318,6 @@ public class AutoColOrder : MonoBehaviour
 
             }
         }
-    }
-
-
-
-
-    private void DestroySpawned()	
-    {
-
-        if (spawnSPs != null)
-        {
-            var children = spawnSPs.GetComponentsInChildren<Transform>(true)
-                .Where(t => t != spawnSPs && IsValidCName(t.name))
-                .ToList();
-
-            foreach (var child in children)
-            {
-                GameObject.Destroy(child.gameObject);
-            }
-        }
-        else
-        {
-            Debug.Log("SpawnSPs is null.");
-        }
-		
     }
 
     private bool IsValidCName(string name)

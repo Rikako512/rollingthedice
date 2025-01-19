@@ -12,6 +12,14 @@ TagManager:
   - Red_data
   - Gray_data
   - floor
+  - main_plotter
+  - main_pointcontainer
+  - main_X_axis
+  - main_Y_axis
+  - main_Z_axis
+  - column_parent
+  - SpawnSPs
+  - SelectedSPs
   layers:
   - Default
   - TransparentFX

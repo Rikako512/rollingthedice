@@ -9,6 +9,8 @@ public class ResetOrder : MonoBehaviour
     public Transform SPM_select;
 
     private Dictionary<Transform, Vector3> initialPositions = new Dictionary<Transform, Vector3>();
+    public SpawnedSPsPositionManager SpawnedSPsPositionManager;
+
 
     void Start()
     {
@@ -43,7 +45,13 @@ public class ResetOrder : MonoBehaviour
         {
             kvp.Key.localPosition = kvp.Value;
         }
-        Debug.Log("---------- ResetOrder 終了 ----------");
+
+        if (SpawnedSPsPositionManager != null)
+        {
+            SpawnedSPsPositionManager.ChangeSpawnedSPsPositions();
+        }
+        
+        Debug.Log("---------- 操作：ResetOrderボタンを押しました ----------");
     }
 
     public Vector3 GetInitialPosition(Transform transform)

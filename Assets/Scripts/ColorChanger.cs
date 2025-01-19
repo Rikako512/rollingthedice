@@ -61,7 +61,8 @@ public class ColorChanger : MonoBehaviour
                 targetTag = "Gray_data";
             }
         }
-        HandleTextMeshProUI(databall.name);
+        Debug.Log("---------- 操作：データ点の色を変更しました ----------");
+        //HandleTextMeshProUI(databall.name);
     }
 
     void HandleTextMeshProUI(string databallName)

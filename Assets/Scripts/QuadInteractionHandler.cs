@@ -73,8 +73,8 @@ public class QuadInteractionHandler : MonoBehaviour
 
         selectedQuad = this;
         selectedParentName = transform.parent?.name ?? "No parent";
-        Debug.Log($"Quad: {selectedParentName} {gameObject.name} selected");
-   
+        Debug.Log($"---------- 操作：Quad: {selectedParentName} {gameObject.name} を選択しました ----------");
+
         // 親に対する相対座標を出力
         if (transform.parent != null)
         {
@@ -87,7 +87,7 @@ public class QuadInteractionHandler : MonoBehaviour
         
         // 新しい選択に基づいてハイライトを適用
         //HighlightRelatedQuads(selectedParentName, true);
-        UpdateQuadState(gameObject.name, selectedParentName, true);
+        UpdateQuadState(gameObject.name, true);
         UpdateXAxisText();
     }
         
@@ -102,20 +102,21 @@ public class QuadInteractionHandler : MonoBehaviour
     {
         isHovered = true;
         //Debug.Log($"Quad {gameObject.name} hover entered");
-        UpdateQuadState(gameObject.name, transform.parent?.name ?? "No parent", false);
+        selectedParentName = transform.parent?.name ?? "No parent";
+        UpdateQuadState(gameObject.name, false);
     }
 
     private void OnQuadHoverExited(HoverExitEventArgs args)
     {
         isHovered = false;
         //Debug.Log($"Quad {gameObject.name} hover exited");
-        UpdateQuadState(gameObject.name, transform.parent?.name ?? "No parent", false);
+        UpdateQuadState(gameObject.name, false);
     }
 
-    private void UpdateQuadState(string quadName, string parentName, bool isSelecting)
+    private void UpdateQuadState(string quadName, bool isSelecting)
     {
         ParseQuadName(quadName);
-        HighlightRelatedQuads(parentName, isSelecting, isHovered);
+        HighlightRelatedQuads(selectedParentName, isSelecting, isHovered);
     }
 
     private void AssignColumnValues(string quadName, string parentName)
@@ -242,7 +243,7 @@ public class QuadInteractionHandler : MonoBehaviour
         }
     }
     
-    private void HighlightRelatedQuads(string parentName, bool isSelecting, bool isHovering)
+    private void HighlightRelatedQuads(string parent, bool isSelecting, bool isHovering)
     {
         if (isSelecting)
         {
@@ -259,6 +260,7 @@ public class QuadInteractionHandler : MonoBehaviour
         Transform floorQuads = scatterplotMatrix.Find("Floor");
 
         // col_x, col_y, col_zに基づいてQuadをハイライト
+        
         if (col_X != -1)
         {
             HighlightQuads(rightQuads, 1, 0, isSelecting, isHovering, col_X);
@@ -274,6 +276,29 @@ public class QuadInteractionHandler : MonoBehaviour
             HighlightQuads(leftQuads, 0, 0, isSelecting, isHovering, col_Z);
             HighlightQuads(rightQuads, 0, 0, isSelecting, isHovering, col_Z);
         }
+
+        if(isHovering)
+        {
+            if(parent == "Right")
+            {
+                HighlightQuads(rightQuads, -1, -1, isSelecting, isHovering, null);
+                HighlightQuads(leftQuads, 0, 0, isSelecting, isHovering, null);
+                HighlightQuads(floorQuads, 1, 1, isSelecting, isHovering, null);
+            }
+            if(parent == "Left")
+            {
+                HighlightQuads(rightQuads, 0, 0, isSelecting, isHovering, null);
+                HighlightQuads(leftQuads, -1, -1, isSelecting, isHovering, null);
+                HighlightQuads(floorQuads, 0, 1, isSelecting, isHovering, null);
+            }
+            if(parent == "Floor")
+            {
+                HighlightQuads(rightQuads, 1, 1, isSelecting, isHovering, null);
+                HighlightQuads(leftQuads, 1, 0, isSelecting, isHovering, null);
+                HighlightQuads(floorQuads, -1, -1, isSelecting, isHovering, null);
+            }
+        }
+        
     }
 
     private void HighlightQuads(Transform parent, int partsIndex, int clickedNumIndex, bool isSelecting, bool isHovering, int? specificValue = null)
@@ -286,17 +311,17 @@ public class QuadInteractionHandler : MonoBehaviour
             string[] parts = childName.Split(',');
             bool shouldHighlight = false;
 
-            if (specificValue.HasValue)
+            if (specificValue.HasValue) // colとして選ばれた箇所
             {
                 shouldHighlight = parts.Length == 2 && int.TryParse(parts[partsIndex], out int num) && num == specificValue.Value;
             }
-            else if (partsIndex == -1 && clickedNumIndex == -1)
+            else if (partsIndex == -1 && clickedNumIndex == -1) //rayが落ちた面
             {
                 shouldHighlight = parts.Length == 2 && 
                     (int.TryParse(parts[0], out int num1) && num1 == clickedNum[0] || 
                     int.TryParse(parts[1], out int num2) && num2 == clickedNum[1]);
             }
-            else if (parts.Length == 2 && int.TryParse(parts[partsIndex], out int num) && num == clickedNum[clickedNumIndex])
+            else if (parts.Length == 2 && int.TryParse(parts[partsIndex], out int num) && num == clickedNum[clickedNumIndex]) //rayが落ちていない側面
             {
                 shouldHighlight = true;
             }
@@ -362,41 +387,11 @@ public class QuadInteractionHandler : MonoBehaviour
         {
             if (!selectedRenderers.Contains(renderer))
             {
-                // 元のマテリアルに戻す（元のマテリアルは各Quadごとに異なる）
-                /*
-                Material originalMaterialForChild = GetOriginalMaterialForChild(renderer.gameObject);
-                if (originalMaterialForChild != null)
-                {
-                    renderer.material = originalMaterialForChild; 
-                }
-                */
                 renderer.material = originalMaterial;
             }
         }
         affectedRenderers.RemoveAll(r => !selectedRenderers.Contains(r));
     }
-
-    /*
-    private Material GetOriginalMaterialForChild(GameObject child)
-    {
-        // Quad名から元のマテリアル名を生成
-        string quadName = child.name; // Quad名は "5, 3" の形式
-        string materialName = quadName.Replace(", ", "_").Trim(); // "5_3" に変換
-
-        // マテリアルをResourcesフォルダから取得（Assets/Resources/2dsp_mat内）
-        Material material = Resources.Load<Material>($"2dsp_mat/{materialName}");
-        
-        if (material == null)
-        {
-            Debug.LogError($"Material not found: 2dsp_mat/{materialName}");
-            return null; // マテリアルが見つからない場合はnullを返す
-        }
-
-        return material; // マテリアルが見つかった場合は返す
-    }
-    */
-
-
 
     void OnDestroy()
     {

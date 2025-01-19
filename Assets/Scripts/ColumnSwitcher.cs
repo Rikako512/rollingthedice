@@ -12,7 +12,6 @@ public class ColumnSwitcher : MonoBehaviour
     public TextMeshPro textMeshPro;
     public Transform SPM; // SPMオブジェクトへの参照
     public Transform SPM_select;
-    public Transform spawnSPs;
 
     private static List<ColumnSwitcher> selectedObjects = new List<ColumnSwitcher>();
     private Vector3 targetPosition;
@@ -21,6 +20,10 @@ public class ColumnSwitcher : MonoBehaviour
 
     private List<Transform> linkedQuads = new List<Transform>();
     private List<Transform> linkedSpawned = new List<Transform>();
+    public SpawnedSPsPositionManager SpawnedSPsPositionManager;
+
+    private GameObject spawnSPs;
+    private GameObject selectionSPs;
 
     private void Start()
     {
@@ -28,6 +31,9 @@ public class ColumnSwitcher : MonoBehaviour
         simpleInteractable.selectEntered.AddListener(OnSelectEntered);
         targetPosition = transform.position;
         textMeshPro = GetComponentInChildren<TextMeshPro>();
+
+        spawnSPs = GameObject.FindGameObjectWithTag("SpawnSPs");
+        selectionSPs = GameObject.FindGameObjectWithTag("SelectedSPs");
 
         FindLinkedQuads();
     }
@@ -64,10 +70,10 @@ public class ColumnSwitcher : MonoBehaviour
         }
     }	
 
-
-    public void UpdateLinkedSpawned()	
+/*
+    public void CalculateSPsPositions()	
     {
-
+    
         linkedSpawned.Clear(); // 既存のリンクをクリア
         if (spawnSPs != null)
         {
@@ -88,6 +94,7 @@ public class ColumnSwitcher : MonoBehaviour
         }
 		
     }
+    */
 
     private bool IsValidCName(string name)
     {
@@ -115,11 +122,15 @@ public class ColumnSwitcher : MonoBehaviour
 
     private void Update()
 	{
+        Vector3 previousPosition;
+        Vector3 newPosition;
+        Vector3 movement;
+
 		    if (isMoving)
 		    {
-		        Vector3 previousPosition = transform.position;
+		        previousPosition = transform.position;
 		        transform.position = Vector3.MoveTowards(transform.position, targetPosition, moveSpeed * Time.deltaTime);
-		        Vector3 movement = transform.position - previousPosition;
+		        movement = transform.position - previousPosition;
 		
 		        foreach (var linkedObject in linkedQuads)
 		        {
@@ -128,15 +139,42 @@ public class ColumnSwitcher : MonoBehaviour
 		                linkedObject.position += movement;
 		            }
 		        }
-
-                foreach (var spawnedObject in linkedSpawned)
+                
+                //MoveSpawnedSPs();
+                
+                if (SpawnedSPsPositionManager != null)
                 {
-                    if (spawnedObject != null)
+                    if (spawnSPs != null && spawnSPs.transform.childCount > 0)
                     {
-                        spawnedObject.position += movement;
+                        Transform spawnedSP = spawnSPs.transform.GetChild(0);
+                        previousPosition = spawnedSP.localPosition;
+                        newPosition = SpawnedSPsPositionManager.CalculatePosition(spawnedSP.name);
+                        spawnedSP.localPosition = Vector3.MoveTowards(spawnedSP.localPosition, newPosition, moveSpeed * Time.deltaTime);
+                        movement = spawnedSP.localPosition - previousPosition;
+                        spawnedSP.localPosition += movement;
+                    }
+                    else
+                    {
+                        Debug.LogWarning("SpawnSPs is null or has no children");
+                    }
+
+                    if (selectionSPs != null && selectionSPs.transform.childCount > 0)
+                    {
+                        foreach (Transform child in selectionSPs.transform)
+                        {   
+                            previousPosition = child.localPosition;
+                            newPosition = SpawnedSPsPositionManager.CalculatePosition(child.name);
+                            child.localPosition = Vector3.MoveTowards(child.localPosition, newPosition, moveSpeed * Time.deltaTime);
+                            movement = child.localPosition - previousPosition;
+                            child.localPosition += movement;
+                        }
+                    }
+                    else
+                    {
+                        Debug.LogWarning("SelectedSPs is null or has no children");
                     }
                 }
-		
+	             	
 		        if (transform.position == targetPosition)
 		        {
 		            isMoving = false;
@@ -145,6 +183,35 @@ public class ColumnSwitcher : MonoBehaviour
 		    }
 	}
 		
+    private void MoveSpawnedSPs()
+    {
+        if (SpawnedSPsPositionManager != null && spawnSPs != null)
+        {
+            var spawnedSP = spawnSPs.transform.GetChild(0);
+            MovingSP(spawnedSP);
+
+            if (selectionSPs.transform.childCount > 0)
+            {
+                foreach (Transform child in selectionSPs.transform)
+                {
+                    MovingSP(child);
+                }
+            }
+            else
+            {
+                Debug.LogWarning("SelectedSPs is null or has no children");
+            }
+        }
+    }
+
+    private void MovingSP(Transform sp)
+    {
+        Vector3 previousPosition = sp.localPosition;
+        Vector3 newPosition = SpawnedSPsPositionManager.CalculatePosition(sp.name);
+        sp.localPosition = Vector3.MoveTowards(sp.localPosition, newPosition, moveSpeed * Time.deltaTime);
+        Vector3 movement = sp.localPosition - previousPosition;
+        sp.localPosition += movement;
+    }
 
     private void OnSelectEntered(SelectEnterEventArgs args)
     {
@@ -160,7 +227,8 @@ public class ColumnSwitcher : MonoBehaviour
             if (selectedObjects.Count == 2)
             {
                 StartCoroutine(SwapPositions(selectedObjects[0], selectedObjects[1]));
-                UpdateLinkedSpawned();
+                //CalculateSPsPositions();
+                Debug.Log("---------- 操作：次元を手動で入れ替えました ----------");
             }
         }
     }

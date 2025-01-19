@@ -49,6 +49,7 @@ public class InfoUIDisplay : MonoBehaviour
             // UIが表示されたときにHeaderのテキストを更新
             UpdateHeaderText();
             ChangeSphereAppearance(true);
+            Debug.Log("---------- 操作：データ点のUIを表示しました ----------");
 
             // ScrollViewTogglerの状態をリセット
             ScrollViewToggler toggler = uiContainer.GetComponentInChildren<ScrollViewToggler>();

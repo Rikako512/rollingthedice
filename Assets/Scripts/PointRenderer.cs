@@ -101,7 +101,7 @@ public class PointRenderer : MonoBehaviour
             GetComponent<ParticleSystem>().SetParticles(particlePoints, particlePoints.Length);
         }
 
-        Debug.Log("---------- PlotDataPoints終了：(" + column1 + ", " + column2 + ", " + column3 + ") ----------");
+        Debug.Log("---------- PlotDataPoints終了：(" + newColumn1 + ", " + newColumn2 + ", " + newColumn3 + ") ----------");
     }
 
     // Places the prefabs according to values read in
